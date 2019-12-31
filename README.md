@@ -1,148 +1,150 @@
 
 # Table of Contents
 
-1.  [Rust: a course under development.](#orgcab6b7a)
-    1.  [CALENDAR](#orgc3da9b1)
-        1.  [Day0 - Tools, Motivation](#org6560582)
-        2.  [Day1 - Ownership](#org8046183)
-        3.  [Day2 - Ownership](#orgeeb507d)
-        4.  [Day3 - Ownership (snoyman's take)](#org8a347ba)
-        5.  [Day ------------------------------------------------------------------](#org36ebdf7)
-        6.  [Day ------------------------------------------------------------------](#orgbde2454)
-        7.  [Day](#org000c252)
-        8.  [Day](#orgc5221b7)
-        9.  [Day](#orgbeff9f3)
-        10. [Day](#org5a1f2ea)
-        11. [Day](#org16c1261)
-        12. [Day](#org4825645)
-        13. [Day](#org98615f8)
-    2.  [STRUCTURE](#orgc0f009f)
-        1.  [PEDAGOGY](#org45b16be)
-    3.  [INFO](#org2ae1f29)
-        1.  [Course Home Directory](#org56a1aed)
-    4.  [REFERENCES](#org43de882)
-        1.  [Books](#org12b2975)
-        2.  [Video (in no particular order)](#org0ac8174)
-        3.  [Pages](#orge10fb1b)
-    5.  [Vocab](#org59c4f2f)
-        1.  [](#orgca47e07)
-        2.  [](#org69bcac5)
-        3.  [Deref Coercion](#org507743c)
-    6.  [Rustonomicon - Iterating over mutable references to elements in a vector](#org51d7d10)
-    7.  [Chapter 10](#org30b2f76)
-        1.  [Blanket Implementations](#org60f2d94)
-    8.  [TOOLS](#orgb55ce48)
-    9.  [Questions](#orgfa22e14)
-        1.  [Chapter7](#org13a00e4)
-    10. [Objective](#orga99a710)
-    11. [PERFORMANCE](#org45e35d0)
-    12. [Owned Types in structs.](#orgcc700a8)
-    13. [Old topic ideas.](#org18b5c53)
-        1.  [Ownership](#orged74d71)
-        2.  [Null](#org078ac64)
-    14. [Practical Stuff](#org2501d17)
-        1.  [Setting up Editor](#orgbd51dcd)
-        2.  [Editor Considerations](#orge38d984)
-    15. [ONLINE RUST COURSE BLUEPRINT](#orge85c3fa)
-        1.  [Facets of Ownership](#org852ae75)
-        2.  [Languages](#org0c75b0b)
-        3.  [Copy](#org55901f4)
-        4.  [A rust implementation of the lambda-calculus?](#org1dfe9e4)
-        5.  [Scopes are owners.](#org5b06879)
-        6.  [Methodology](#orgc13812d)
-        7.  [RUST-O-RAMA bonanza.](#org77241b7)
-        8.  [What is the global allocator?](#org5d8e4dd)
-        9.  [How to train a new Rust member?](#orgb315bc4)
-        10. [Lifetime Specifier](#orgbe640d6)
-        11. [existing rust courses](#org0f8b3ee)
-        12. [Links](#org4567660)
-        13. [Builder Pattern mitigates verbose constructors of large structs](#org75b27aa)
-        14. [What's the diff?](#orge3dd401)
-        15. [Philosophy](#org453388d)
-        16. [Operational semantics, shortcut notation useful to speed understanding?](#orgcb2438b)
-        17. [Closures](#org4ff0b33)
-    16. [Lecture10](#orgc5512f2)
-        1.  [What's a trait?](#org141316d)
-        2.  [What's an interface?](#org37577d3)
-    17. [Lecture Heap, aliasing, ownership and borrowing???](#org303a41c)
-        1.  [unvetted links](#org5c64107)
-        2.  [Objective](#org0987ea9)
-    18. [Possible Omni Project](#orgf5395e9)
-        1.  [Efficient mini scheme interpreter](#org0e81e73)
-        2.  [Network](#org08c5913)
-        3.  [Emulator](#org66e49d4)
-    19. [Out of scope neat stuff!](#org54a4f09)
-        1.  [Deep dives](#org554f672)
-        2.  [Hardware](#org6edff04)
-        3.  [Rust on microcontrollers](#org38f10c9)
-        4.  [C2Rust compiler](#org368d533)
-        5.  [Helping the cause](#org94c850a)
-        6.  [NEW IDEAS?](#orgaf26744)
-        7.  [Scheme Segque](#orged10f57)
-        8.  [TOOLS](#orgda65556)
-2.  [UNSORTED](#orgfcf52cf)
-    1.  [Chunking Optimizations: Let the Knife Do the Work (AVX-512)](#org35fd226)
-    2.  [What's up with Cargo.lock?](#orgb4a8ead)
-    3.  [What's up with build scripts?](#org802a067)
-    4.  [Rust Guides](#org227a82d)
-    5.  [The Periodic Table of Rust Types](#orgaab62eb)
-    6.  [Ownership visualization](#org32833ee)
-3.  [Rust: Fast and Safe.](#org5b55824)
-    1.  [RefCell](#orgba20ec1)
-        1.  [How do I return a reference to something inside a RefCell without breaking encapsulation?](#org3a056d5)
-        2.  [exercise ideas](#org91d7ee7)
-4.  [Shared Borrows](#org6e873f3)
-5.  [Mutable Borrows](#org25556e0)
+1.  [Rust: a course under development.](#orga080ec0)
+    1.  [CALENDAR](#org2a86ad2)
+        1.  [Day0 - Tools, Motivation](#orge940cf2)
+        2.  [Day1 - Ownership](#org5f7af75)
+        3.  [Day2 - Ownership](#orged4b21b)
+        4.  [Day3 - Ownership (snoyman's take)](#org2559d74)
+        5.  [Day ------------------------------------------------------------------](#org069b42c)
+        6.  [Day ------------------------------------------------------------------](#orgaf66f84)
+        7.  [Day](#orgf5c925f)
+        8.  [Day](#orgc4be39d)
+        9.  [Day](#org223a0eb)
+        10. [Day](#org3cde149)
+        11. [Day](#org47a1992)
+        12. [Day](#org47e9051)
+        13. [Day](#orgfbfa4a1)
+    2.  [STRUCTURE](#orgda02586)
+        1.  [PEDAGOGY](#org29eb918)
+    3.  [INFO](#org55b92b6)
+        1.  [Course Home Directory](#orgd5f8017)
+    4.  [REFERENCES](#org18568b1)
+        1.  [Books](#orgee5f677)
+        2.  [Video (in no particular order)](#orgc30d9c2)
+        3.  [Pages](#org45fb2f9)
+    5.  [Vocab](#org3f9680c)
+        1.  [Turbofish](#org49c5251)
+        2.  [Splitting Borrows](#orgf612ec5)
+        3.  [Deref Coercion](#orgda5b4dc)
+    6.  [Rustonomicon - Iterating over mutable references to elements in a vector](#org554ac07)
+    7.  [Chapter 10](#orgae149f2)
+        1.  [Blanket Implementations](#orgc994c25)
+    8.  [TOOLS](#org51e1bae)
+    9.  [Questions](#org4cab689)
+        1.  [Chapter7](#org648a46c)
+    10. [Objective](#org34e40b7)
+    11. [PERFORMANCE](#org52d7caf)
+    12. [Owned Types in structs.](#orgb58dd93)
+    13. [Old topic ideas.](#org7e705c6)
+        1.  [Ownership](#orgcaf129b)
+        2.  [Null](#orgc7b6187)
+    14. [Practical Stuff](#orgf79552c)
+        1.  [Setting up Editor](#orge247f71)
+        2.  [Editor Considerations](#org392888d)
+    15. [ONLINE RUST COURSE BLUEPRINT](#org7af6639)
+        1.  [Facets of Ownership](#org22f8f4d)
+        2.  [Languages](#org5bd5153)
+        3.  [Copy](#org2a06c94)
+        4.  [A rust implementation of the lambda-calculus?](#org593ee2d)
+        5.  [Scopes are owners.](#org244e13c)
+        6.  [Methodology](#orgcbdd7c2)
+        7.  [RUST-O-RAMA bonanza.](#org3a4893e)
+        8.  [What is the global allocator?](#orgde03c53)
+        9.  [How to train a new Rust member?](#org7c1c189)
+        10. [Lifetime Specifier](#orgbb69e12)
+        11. [existing rust courses](#org378ef77)
+        12. [Links](#org5b9f2bf)
+        13. [Builder Pattern mitigates verbose constructors of large structs](#orgdcba2b7)
+        14. [What's the diff?](#orgae080ec)
+        15. [Philosophy](#orgacca8bd)
+        16. [Operational semantics, shortcut notation useful to speed understanding?](#orgc3ab6e9)
+        17. [Closures](#orgc7eb20e)
+    16. [Lecture10](#orgac506d4)
+        1.  [What's a trait?](#orgd5383ae)
+        2.  [What's an interface?](#org25d1688)
+    17. [Lecture Heap, aliasing, ownership and borrowing???](#org1116bfd)
+        1.  [unvetted links](#org200b027)
+        2.  [Objective](#orge6ef68b)
+    18. [Possible Omni Project](#org38d107b)
+        1.  [Efficient mini scheme interpreter](#org01bb353)
+        2.  [Network](#orgb5b0f01)
+        3.  [Emulator](#orgfef9cf2)
+    19. [Out of scope neat stuff!](#org8d67f41)
+        1.  [Deep dives](#orge0cb5a7)
+        2.  [Hardware](#org7a56804)
+        3.  [Rust on microcontrollers](#orga2d6c94)
+        4.  [C2Rust compiler](#org09e271c)
+        5.  [Helping the cause](#orgf6d5484)
+        6.  [NEW IDEAS?](#org080641c)
+        7.  [Scheme Segque](#org6168982)
+        8.  [TOOLS](#org78f52fc)
+2.  [UNSORTED](#org5cb6d99)
+    1.  [Chunking Optimizations: Let the Knife Do the Work (AVX-512)](#orge6f83b8)
+    2.  [What's up with Cargo.lock?](#orgbcaa34c)
+    3.  [What's up with build scripts?](#orgc84277a)
+    4.  [Rust Guides](#org58e9dc8)
+    5.  [The Periodic Table of Rust Types](#orge8037e4)
+    6.  [Ownership visualization](#orgab867b8)
+3.  [Rust: Fast and Safe.](#org94a0e2a)
+    1.  [RefCell](#orgc49bda3)
+        1.  [How do I return a reference to something inside a RefCell without breaking encapsulation?](#org85ca2af)
+        2.  [exercise ideas](#org357ba0a)
+4.  [Shared Borrows](#orgb69b6f3)
+5.  [Mutable Borrows](#orgc150834)
 
 
-<a id="orgcab6b7a"></a>
+<a id="orga080ec0"></a>
 
 # Rust: a course under development.
 
-deplotment? There should be a vagrant 
+deployment? a vagrant box? or are people using their own machines?
 
 
-<a id="orgc3da9b1"></a>
+<a id="org2a86ad2"></a>
 
 ## CALENDAR
 
 
-<a id="org6560582"></a>
+<a id="orge940cf2"></a>
 
 ### Day0 - Tools, Motivation
 
-video1 [1.4.2.1](#orgc3503b1)
-Read Chapter 1 of [1.4.1.1.1](#org6bf5eeb)
+-   video1 [1.4.2.1](#org4fd8e89)
+-   Read Chapter 1 of [1.4.1.1.1](#orgb02206f)
 
-Setting up rust: 
-<https://www.rust-lang.org/tools/install>
+-   Setting up rust: 
+    <https://www.rust-lang.org/tools/install>
 
 
-<a id="org8046183"></a>
+<a id="org5f7af75"></a>
 
 ### Day1 - Ownership
 
-getting the editor up and running.
-<https://www.rust-lang.org/tools>
+-   getting the editor up and running.
+    <https://www.rust-lang.org/tools>
 
-clone [1.4.3.3](#orgad554a4) into [1.3.1](#org56a1aed)
-video1 [1.4.2.2](#orgaeebc1c) & ex D1E1
-video2 [1.4.2.3](#orgffa5db4) & ex D1E2
+-   clone: [1.4.3.3](#org505f8fd) into [1.3.1](#orgd5f8017)
+    (to shield scholars from this detail?)
+
+-   watch: video1 [1.4.2.2](#org2566052) & ex D1E1
+-   watch: video2 [1.4.2.3](#org2dad96e) & ex D1E2
 
 
-<a id="orgeeb507d"></a>
+<a id="orged4b21b"></a>
 
 ### Day2 - Ownership
 
-video1 [4](#org6e873f3) & ex D2E1, D2E2
-video2 [5](#org25556e0) & ex D2E3
+-   watch: video1 [4](#orgb69b6f3) & ex D2E1, D2E2
+-   watch: video2 [5](#orgc150834) & ex D2E3
 
-Another take.
-Memory, Ownership and Borrowing
-<https://www.youtube.com/watch?v=8M0QfLUDaaA>
+-   Another take.
+    Memory, Ownership and Borrowing
+    -   watch: <https://www.youtube.com/watch?v=8M0QfLUDaaA>
 
 
-<a id="org8a347ba"></a>
+<a id="org2559d74"></a>
 
 ### Day3 - Ownership (snoyman's take)
 
@@ -150,10 +152,10 @@ Do Tutorial
 
 -   <https://www.snoyman.com/blog/2018/10/rust-crash-course-02-basics-of-ownership>
 
-+[1.4.3.9](#org2a15459)
++[1.4.3.9](#org36b1177)
 
 
-<a id="org36ebdf7"></a>
+<a id="org069b42c"></a>
 
 ### Day ------------------------------------------------------------------
 
@@ -170,7 +172,7 @@ types.
 Work through Chapter 2 of the book.
 
 
-<a id="orgbde2454"></a>
+<a id="orgaf66f84"></a>
 
 ### Day ------------------------------------------------------------------
 
@@ -178,21 +180,21 @@ Chapter 3, Getting a feel for the language, this material will
 probably be more familiar.
 
 
-<a id="org000c252"></a>
+<a id="orgf5c925f"></a>
 
 ### Day
 
 Chapter 4 of the book, take your time.
 
 
-<a id="orgc5221b7"></a>
+<a id="orgc4be39d"></a>
 
 ### Day
 
 Optimizing Factorial.
 
 
-<a id="orgbeff9f3"></a>
+<a id="org223a0eb"></a>
 
 ### Day
 
@@ -200,14 +202,14 @@ Chapter [6]
 work through PROJECT:1 A Bad Stack
 
 
-<a id="org5a1f2ea"></a>
+<a id="org3cde149"></a>
 
 ### Day
 
 Optimizing Matrix Multiplication
 
 
-<a id="org16c1261"></a>
+<a id="org47a1992"></a>
 
 ### Day
 
@@ -241,7 +243,7 @@ RustConf 2018 - Benchmarking and Optimization of Rust Libraries by Paul Mason
         keep functions smaller to take advantage of #[inline]
 
 
-<a id="org4825645"></a>
+<a id="org47e9051"></a>
 
 ### Day
 
@@ -304,7 +306,7 @@ exercises for Guard, Rc, Arc, Mutex.
     </table>
 
 
-<a id="org98615f8"></a>
+<a id="orgfbfa4a1"></a>
 
 ### Day
 
@@ -374,12 +376,12 @@ More on concurrency
         WASM Web field simulator.
 
 
-<a id="orgc0f009f"></a>
+<a id="orgda02586"></a>
 
 ## STRUCTURE
 
 
-<a id="org45b16be"></a>
+<a id="org29eb918"></a>
 
 ### PEDAGOGY
 
@@ -461,7 +463,7 @@ More on concurrency
     credit.
     
     -   N topics while minding fast&safe
-    -   [1.4.3.6](#orgd037d8d)
+    -   [1.4.3.6](#org6707ab6)
 
 5.  Topics
 
@@ -469,7 +471,7 @@ More on concurrency
     
         1.  Types of owners
         
-            -   [1.4.3.9](#org2a15459)
+            -   [1.4.3.9](#org36b1177)
             -   Scopes
             -   Data and some Types: String, structs, enums, etc. not str.
         
@@ -533,12 +535,12 @@ More on concurrency
     other data structures work.
 
 
-<a id="org2ae1f29"></a>
+<a id="org55b92b6"></a>
 
 ## INFO
 
 
-<a id="org56a1aed"></a>
+<a id="orgd5f8017"></a>
 
 ### Course Home Directory
 
@@ -548,12 +550,12 @@ place, anywhere will do.
 mkdir -p ~/courses/rust-fast-and-safe
 
 
-<a id="org43de882"></a>
+<a id="org18568b1"></a>
 
 ## REFERENCES
 
 
-<a id="org12b2975"></a>
+<a id="orgee5f677"></a>
 
 ### Books
 
@@ -586,7 +588,7 @@ mkdir -p ~/courses/rust-fast-and-safe
         <https://opendatastructures.org/ods-python-screen.pdf>
 
 
-<a id="org0ac8174"></a>
+<a id="orgc30d9c2"></a>
 
 ### Video (in no particular order)
 
@@ -612,7 +614,7 @@ mkdir -p ~/courses/rust-fast-and-safe
     Exercise @ 54:55
 
 
-<a id="orge10fb1b"></a>
+<a id="org45fb2f9"></a>
 
 ### Pages
 
@@ -740,36 +742,36 @@ mkdir -p ~/courses/rust-fast-and-safe
     /
 
 
-<a id="org59c4f2f"></a>
+<a id="org3f9680c"></a>
 
 ## Vocab
 
 
-<a id="orgca47e07"></a>
+<a id="org49c5251"></a>
 
-### [1.4.3.12](#orgb567983)
-
-
-<a id="org69bcac5"></a>
-
-### [1.4.3.11](#orgdaa2a27)
+### [1.4.3.12](#org4281444)
 
 
-<a id="org507743c"></a>
+<a id="orgf612ec5"></a>
+
+### [1.4.3.11](#org4ae697a)
+
+
+<a id="orgda5b4dc"></a>
 
 ### Deref Coercion
 
 <https://doc.rust-lang.org/book/ch15-02-deref.html>
 
 
-<a id="org51d7d10"></a>
+<a id="org554ac07"></a>
 
 ## Rustonomicon - Iterating over mutable references to elements in a vector
 
 <https://doc.rust-lang.org/stable/nomicon/vec.html>.
 
 \`\`\`rust
-let mut v = vec\\![100, 32, 57];
+let mut v = vec\![100, 32, 57];
 for i in &mut v {
     \*i += 50;
 }
@@ -777,12 +779,12 @@ Listing 8-9: Iterating over mutable references to elements in a vector
 \`\`\`
 
 
-<a id="org30b2f76"></a>
+<a id="orgae149f2"></a>
 
 ## Chapter 10
 
 
-<a id="org60f2d94"></a>
+<a id="orgc994c25"></a>
 
 ### Blanket Implementations
 
@@ -798,7 +800,7 @@ class (Display a) => ToString a where
     display :: a -> String
 
 
-<a id="orgb55ce48"></a>
+<a id="org51e1bae"></a>
 
 ## TOOLS
 
@@ -806,12 +808,12 @@ running tests on code changes
 <https://github.com/passcod/cargo-watch>
 
 
-<a id="orgfa22e14"></a>
+<a id="org4cab689"></a>
 
 ## Questions
 
 
-<a id="org13a00e4"></a>
+<a id="org648a46c"></a>
 
 ### Chapter7
 
@@ -852,7 +854,7 @@ running tests on code changes
     3.  files without mod keyword implictity declare module.
 
 
-<a id="orga99a710"></a>
+<a id="org34e40b7"></a>
 
 ## Objective
 
@@ -863,7 +865,7 @@ The first half is going to be about safety. The second half will be
 about profiling and when unsafe is the right way to go.
 
 
-<a id="org45e35d0"></a>
+<a id="org52d7caf"></a>
 
 ## PERFORMANCE
 
@@ -873,7 +875,7 @@ replaces malloc dance
 <https://doc.rust-lang.org/std/vec/struct.Vec.html>
 
 
-<a id="orgcc700a8"></a>
+<a id="orgb58dd93"></a>
 
 ## Owned Types in structs.
 
@@ -885,7 +887,7 @@ of its data and for that data to be valid for as long as the entire
 struct is valid."
 
 
-<a id="org18b5c53"></a>
+<a id="org7e705c6"></a>
 
 ## Old topic ideas.
 
@@ -1031,14 +1033,14 @@ struct is valid."
 highlight differences: IF statement or IF expression?
 
 
-<a id="orged74d71"></a>
+<a id="orgcaf129b"></a>
 
 ### Ownership
 
 <http://intorust.com/tutorial/ownership/>
 
 
-<a id="org078ac64"></a>
+<a id="orgc7b6187"></a>
 
 ### Null
 
@@ -1050,12 +1052,12 @@ highlight differences: IF statement or IF expression?
 2.  rust doesn't allow them
 
 
-<a id="org2501d17"></a>
+<a id="orgf79552c"></a>
 
 ## Practical Stuff
 
 
-<a id="orgbd51dcd"></a>
+<a id="orge247f71"></a>
 
 ### Setting up Editor
 
@@ -1066,7 +1068,7 @@ highlight differences: IF statement or IF expression?
     <https://www.mortens.dev/blog/emacs-and-the-language-server-protocol/>
 
 
-<a id="orge38d984"></a>
+<a id="org392888d"></a>
 
 ### Editor Considerations
 
@@ -1100,12 +1102,12 @@ highlight differences: IF statement or IF expression?
     <https://rr-project.org>
 
 
-<a id="orge85c3fa"></a>
+<a id="org7af6639"></a>
 
 ## ONLINE RUST COURSE BLUEPRINT
 
 
-<a id="org852ae75"></a>
+<a id="org22f8f4d"></a>
 
 ### Facets of Ownership
 
@@ -1115,14 +1117,14 @@ exercise will be to slowly build up the automation.  Desugar
 rust. Then Resugar it.
 
 
-<a id="org0c75b0b"></a>
+<a id="org5bd5153"></a>
 
 ### Languages
 
 <http://lambda-the-ultimate.org/node/4389>
 
 
-<a id="org55901f4"></a>
+<a id="org2a06c94"></a>
 
 ### Copy
 
@@ -1135,17 +1137,17 @@ rust. Then Resugar it.
 2.  Clone (python's deep<sub>copy</sub>)
 
 
-<a id="org1dfe9e4"></a>
+<a id="org593ee2d"></a>
 
 ### A rust implementation of the lambda-calculus?
 
 
-<a id="org5b06879"></a>
+<a id="org244e13c"></a>
 
 ### Scopes are owners.
 
 
-<a id="orgc13812d"></a>
+<a id="orgcbdd7c2"></a>
 
 ### Methodology
 
@@ -1172,7 +1174,7 @@ rust. Then Resugar it.
     Omni projects, a ~1 KLOC project.
 
 
-<a id="org77241b7"></a>
+<a id="org3a4893e"></a>
 
 ### RUST-O-RAMA bonanza.
 
@@ -1182,7 +1184,7 @@ borr-ow-rama part1
 closur-ama part1
 
 
-<a id="org5d8e4dd"></a>
+<a id="orgde03c53"></a>
 
 ### What is the global allocator?
 
@@ -1190,7 +1192,7 @@ closur-ama part1
 Divergent functions.
 
 
-<a id="orgb315bc4"></a>
+<a id="org7c1c189"></a>
 
 ### How to train a new Rust member?
 
@@ -1202,7 +1204,7 @@ Divergent functions.
         reuse names when returning ownership.
 
 
-<a id="orgbe640d6"></a>
+<a id="orgbb69e12"></a>
 
 ### Lifetime Specifier
 
@@ -1210,7 +1212,7 @@ Rust Tutorial - Lifetime Specifiers Explained
 <https://www.youtube.com/watch?v=QoEX-Vu-R6k>
 
 
-<a id="org0f8b3ee"></a>
+<a id="org378ef77"></a>
 
 ### existing rust courses
 
@@ -1219,7 +1221,7 @@ Rust Tutorial - Lifetime Specifiers Explained
 <http://users.cs.northwestern.edu/~jesse/course/eecs396rust/>
 
 
-<a id="org4567660"></a>
+<a id="org5b9f2bf"></a>
 
 ### Links
 
@@ -1229,14 +1231,14 @@ Rust Tutorial - Lifetime Specifiers Explained
     <https://jvns.ca/blog/2016/09/11/rustconf-keynote/>
 
 
-<a id="org75b27aa"></a>
+<a id="orgdcba2b7"></a>
 
 ### Builder Pattern mitigates verbose constructors of large structs
 
 <https://doc.rust-lang.org/1.0.0/style/ownership/builders.html>
 
 
-<a id="orge3dd401"></a>
+<a id="orgae080ec"></a>
 
 ### What's the diff?
 
@@ -1254,7 +1256,7 @@ Rust Tutorial - Lifetime Specifiers Explained
     FFI
 
 
-<a id="org453388d"></a>
+<a id="orgacca8bd"></a>
 
 ### Philosophy
 
@@ -1280,7 +1282,7 @@ hurdles.
 Lecture
 
 
-<a id="orgcb2438b"></a>
+<a id="orgc3ab6e9"></a>
 
 ### Operational semantics, shortcut notation useful to speed understanding?
 
@@ -1289,7 +1291,7 @@ this is good, understand this
 <https://arxiv.org/pdf/1903.00982.pdf>
 
 
-<a id="org4ff0b33"></a>
+<a id="orgc7eb20e"></a>
 
 ### Closures
 
@@ -1306,19 +1308,19 @@ with pictures.
     <https://ricardomartins.cc/2015/10/12/practical_differences_between_rust_closures_and_functions>
 
 
-<a id="orgc5512f2"></a>
+<a id="orgac506d4"></a>
 
 ## Lecture10
 
 
-<a id="org141316d"></a>
+<a id="orgd5383ae"></a>
 
 ### What's a trait?
 
 It's like an interface.
 
 
-<a id="org37577d3"></a>
+<a id="org25d1688"></a>
 
 ### What's an interface?
 
@@ -1334,19 +1336,19 @@ It's like C++ Abstract Class
 Haskell type class
 
 
-<a id="org303a41c"></a>
+<a id="org1116bfd"></a>
 
 ## Lecture Heap, aliasing, ownership and borrowing???
 
 
-<a id="org5c64107"></a>
+<a id="org200b027"></a>
 
 ### unvetted links
 
 <https://github.com/mre/idiomatic-rust>
 
 
-<a id="org0987ea9"></a>
+<a id="orge6ef68b"></a>
 
 ### Objective
 
@@ -1360,12 +1362,12 @@ Haskell type class
 2.  Common Errors
 
 
-<a id="orgf5395e9"></a>
+<a id="org38d107b"></a>
 
 ## Possible Omni Project
 
 
-<a id="org0e81e73"></a>
+<a id="org01bb353"></a>
 
 ### Efficient mini scheme interpreter
 
@@ -1373,7 +1375,7 @@ Garbage Collector?
 Challenges
 
 
-<a id="org08c5913"></a>
+<a id="orgb5b0f01"></a>
 
 ### Network
 
@@ -1386,7 +1388,7 @@ Challenges
 2.  Enforcing protocol invarients with the borrow checker?
 
 
-<a id="org66e49d4"></a>
+<a id="orgfef9cf2"></a>
 
 ### Emulator
 
@@ -1399,14 +1401,14 @@ Lab4 Add a Mul instruction and profile it.
 Lab5 Run linux on the emulator.
 
 
-<a id="org54a4f09"></a>
+<a id="org8d67f41"></a>
 
 ## Out of scope neat stuff!
 
 <https://github.com/RustPython/RustPython>
 
 
-<a id="org554f672"></a>
+<a id="orge0cb5a7"></a>
 
 ### Deep dives
 
@@ -1463,7 +1465,7 @@ Lab5 Run linux on the emulator.
         2.  representation containment
 
 
-<a id="org6edff04"></a>
+<a id="org7a56804"></a>
 
 ### Hardware
 
@@ -1471,28 +1473,28 @@ Using Type-Level Programming in Rust to Make Safer Hardware Abstractions
 <https://blog.auxon.io/2019/10/25/type-level-registers/>
 
 
-<a id="org38f10c9"></a>
+<a id="orga2d6c94"></a>
 
 ### Rust on microcontrollers
 
 <https://droogmic.github.io/microrust/>
 
 
-<a id="org368d533"></a>
+<a id="org09e271c"></a>
 
 ### C2Rust compiler
 
 <https://c2rust.com>
 
 
-<a id="org94c850a"></a>
+<a id="orgf6d5484"></a>
 
 ### Helping the cause
 
 implement for loop names in racer?
 
 
-<a id="orgaf26744"></a>
+<a id="org080641c"></a>
 
 ### NEW IDEAS?
 
@@ -1503,7 +1505,7 @@ implement for loop names in racer?
     has a field with type \*C ?  
 
 
-<a id="orged10f57"></a>
+<a id="org6168982"></a>
 
 ### Scheme Segque
 
@@ -1513,7 +1515,7 @@ when frames are removed from the environment lifetimes end
 etc.
 
 
-<a id="orgda65556"></a>
+<a id="org78f52fc"></a>
 
 ### TOOLS
 
@@ -1523,7 +1525,7 @@ issue so other people can learn.
 Get the your editor working.
 
 
-<a id="orgfcf52cf"></a>
+<a id="org5cb6d99"></a>
 
 # UNSORTED
 
@@ -1532,49 +1534,49 @@ Get the your editor working.
 unimplemented!() is a time saver.
 
 
-<a id="org35fd226"></a>
+<a id="orge6f83b8"></a>
 
 ## Chunking Optimizations: Let the Knife Do the Work (AVX-512)
 
 <https://nullprogram.com/blog/2019/12/09/>
 
 
-<a id="orgb4a8ead"></a>
+<a id="orgbcaa34c"></a>
 
 ## What's up with Cargo.lock?
 
 <https://doc.rust-lang.org/cargo/guide/cargo-toml-vs-cargo-lock.html>
 
 
-<a id="org802a067"></a>
+<a id="orgc84277a"></a>
 
 ## What's up with build scripts?
 
 <https://doc.rust-lang.org/cargo/reference/build-scripts.html>
 
 
-<a id="org227a82d"></a>
+<a id="org58e9dc8"></a>
 
 ## Rust Guides
 
 <https://cheats.rs/2018-12-01/>
 
 
-<a id="orgaab62eb"></a>
+<a id="orge8037e4"></a>
 
 ## The Periodic Table of Rust Types
 
 <http://cosmic.mearie.org/2014/01/periodic-table-of-rust-types/>
 
 
-<a id="org32833ee"></a>
+<a id="orgab867b8"></a>
 
 ## Ownership visualization
 
 <https://rufflewind.com/2017-02-15/rust-move-copy-borrow>
 
 
-<a id="org5b55824"></a>
+<a id="org94a0e2a"></a>
 
 # Rust: Fast and Safe.
 
@@ -1600,7 +1602,7 @@ with profiles
 <https://doc.rust-lang.org/book/ch14-01-release-profiles.html>
 
 
-<a id="orgba20ec1"></a>
+<a id="orgc49bda3"></a>
 
 ## RefCell
 
@@ -1611,12 +1613,12 @@ meander through the
 <https://stackoverflow.com/questions/30831037/situations-where-cell-or-refcell-is-the-best-choice>
 
 
-<a id="org3a056d5"></a>
+<a id="org85ca2af"></a>
 
 ### How do I return a reference to something inside a RefCell without breaking encapsulation?
 
 
-<a id="org91d7ee7"></a>
+<a id="org357ba0a"></a>
 
 ### exercise ideas
 
@@ -1624,12 +1626,12 @@ interlace The rust book with exercises?
 rust playground iframe
 
 
-<a id="org6e873f3"></a>
+<a id="orgb69b6f3"></a>
 
 # Shared Borrows
 
 
-<a id="org25556e0"></a>
+<a id="orgc150834"></a>
 
 # Mutable Borrows
 

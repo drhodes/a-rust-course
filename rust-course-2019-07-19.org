@@ -1,29 +1,31 @@
 * Rust: a course under development.
-deplotment? There should be a vagrant 
+deployment? a vagrant box? or are people using their own machines?
 
 ** CALENDAR
 *** Day0 - Tools, Motivation
-video1 [[Why Rust?]]
-Read Chapter 1 of [[The Rust Book]]
+- video1 [[Why Rust?]]
+- Read Chapter 1 of [[The Rust Book]]
 
-Setting up rust: 
-https://www.rust-lang.org/tools/install
+- Setting up rust: 
+  https://www.rust-lang.org/tools/install
 
 *** Day1 - Ownership
-getting the editor up and running.
-https://www.rust-lang.org/tools
+- getting the editor up and running.
+  https://www.rust-lang.org/tools
 
-clone [[Rustlings]] into [[Course Home Directory]]
-video1 [[Hello, World!]] & ex D1E1
-video2 [[IntoRust: Ownership]] & ex D1E2
+- clone: [[Rustlings]] into [[Course Home Directory]]
+  (to shield scholars from this detail?)
+
+- watch: video1 [[Hello, World!]] & ex D1E1
+- watch: video2 [[IntoRust: Ownership]] & ex D1E2
 
 *** Day2 - Ownership
-video1 [[Shared Borrows]] & ex D2E1, D2E2
-video2 [[Mutable Borrows]] & ex D2E3
+- watch: video1 [[Shared Borrows]] & ex D2E1, D2E2
+- watch: video2 [[Mutable Borrows]] & ex D2E3
 
-Another take.
-Memory, Ownership and Borrowing
-https://www.youtube.com/watch?v=8M0QfLUDaaA
+- Another take.
+  Memory, Ownership and Borrowing
+  - watch: https://www.youtube.com/watch?v=8M0QfLUDaaA
 
 *** Day3 - Ownership (snoyman's take)
 Do Tutorial
@@ -869,3 +871,5 @@ https://stackoverflow.com/questions/30831037/situations-where-cell-or-refcell-is
 interlace The rust book with exercises?
 rust playground iframe
 
+* Shared Borrows
+* Mutable Borrows
