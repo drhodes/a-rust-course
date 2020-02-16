@@ -702,7 +702,7 @@ https://github.com/mre/idiomatic-rust
 - have a solid grasp of allocators and how their interface allows usage.
 - understand the heap, issues of aliasing, ownership and borrowing.
 - be able to port some basic imperative idioms to rust
-- be able to decode rust error messages regarding ownership.
+- be able to decode rustc error messages regarding ownership.
 
 **** Common Errors
 
@@ -721,11 +721,11 @@ https://github.com/pingcap/talent-plan/blob/master/rust/README.md
 *** Emulator
 Port a (C++ or C) (Beta or RiscV) cpu emulator to Rust.
 
-Lab1 Control Structure Upgrades. 
-Lab2 Debugging Rust
-Lab3 Instruction set, Tests!
-Lab4 Add a Mul instruction and profile it.
-Lab5 Run linux on the emulator.
+- Lab1 Control Structure Upgrades. 
+- Lab2 Debugging Rust
+- Lab3 Instruction set, Tests!
+- Lab4 Add a Mul instruction and profile it.
+- Lab5 Run linux on the emulator.
 
 
 
@@ -811,9 +811,15 @@ Get the your editor working.
 
 
 * UNSORTED 
-https://blog.systems.ethz.ch/blog/2018/a-hammer-you-can-only-hold-by-the-handle.html
+** Rust Battle!
+https://rustbattle.net/battle
 
-unimplemented!() is a time saver.
+** Arti&cle?
+https://blog.systems.ethz.ch/blog/2018/a-hammer-you-can-only-hold-by-the-handle.html
+todo!() is a time saver.
+
+** Interior mutability patterns
+https://pitdicker.github.io/Interior-mutability-patterns/
 
 ** Chunking Optimizations: Let the Knife Do the Work (AVX-512)
 https://nullprogram.com/blog/2019/12/09/
@@ -832,6 +838,8 @@ http://cosmic.mearie.org/2014/01/periodic-table-of-rust-types/
 
 ** Ownership visualization
 https://rufflewind.com/2017-02-15/rust-move-copy-borrow
+
+
 
 * Rust: Fast and Safe.
 highlight pitfalls.

@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-12-31 Tue 15:53 -->
+<!-- 2020-02-16 Sun 10:47 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -255,173 +255,176 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgd5c6caf">1. Rust: a course under development.</a>
+<li><a href="#org92d8305">1. Rust: a course under development.</a>
 <ul>
-<li><a href="#org8f32109">1.1. CALENDAR</a>
+<li><a href="#org7a8d39a">1.1. CALENDAR</a>
 <ul>
-<li><a href="#orgaf6892b">1.1.1. Day0 - Tools, Motivation</a></li>
-<li><a href="#org95fdef8">1.1.2. Day1 - Ownership</a></li>
-<li><a href="#org2adb089">1.1.3. Day2 - Ownership</a></li>
-<li><a href="#orgf156af5">1.1.4. Day3 - Ownership (snoyman's take)</a></li>
-<li><a href="#org5b7c324">1.1.5. Day ------------------------------------------------------------------</a></li>
-<li><a href="#org0bf21fc">1.1.6. Day ------------------------------------------------------------------</a></li>
-<li><a href="#orgef3cc47">1.1.7. Day</a></li>
-<li><a href="#org7dc55ed">1.1.8. Day</a></li>
-<li><a href="#orgf487566">1.1.9. Day</a></li>
-<li><a href="#org96400b5">1.1.10. Day</a></li>
-<li><a href="#org2ad1cd5">1.1.11. Day</a></li>
-<li><a href="#orgbb9af85">1.1.12. Day</a></li>
-<li><a href="#orgffee287">1.1.13. Day</a></li>
+<li><a href="#org1656534">1.1.1. Day0 - Tools, Motivation</a></li>
+<li><a href="#org89b70f7">1.1.2. Day1 - Ownership</a></li>
+<li><a href="#org5d053fb">1.1.3. Day2 - Ownership</a></li>
+<li><a href="#org36d96cc">1.1.4. Day3 - Ownership (snoyman's take)</a></li>
+<li><a href="#orgb921870">1.1.5. Day ------------------------------------------------------------------</a></li>
+<li><a href="#org6c56d34">1.1.6. Day ------------------------------------------------------------------</a></li>
+<li><a href="#orgb375ac0">1.1.7. Day</a></li>
+<li><a href="#org4ea5ca7">1.1.8. Day</a></li>
+<li><a href="#orgfea8ef9">1.1.9. Day</a></li>
+<li><a href="#org7adcebd">1.1.10. Day</a></li>
+<li><a href="#orgdbf3dfd">1.1.11. Day</a></li>
+<li><a href="#org44267d7">1.1.12. Day</a></li>
+<li><a href="#orgdd0d8ab">1.1.13. Day</a></li>
 </ul>
 </li>
-<li><a href="#orga91de73">1.2. STRUCTURE</a>
+<li><a href="#org6c8094c">1.2. STRUCTURE</a>
 <ul>
-<li><a href="#org8c3ba87">1.2.1. PEDAGOGY</a></li>
+<li><a href="#orgc802d80">1.2.1. PEDAGOGY</a></li>
 </ul>
 </li>
-<li><a href="#org51ee2d0">1.3. INFO</a>
+<li><a href="#orgdfab974">1.3. INFO</a>
 <ul>
-<li><a href="#orgc89bb27">1.3.1. Course Home Directory</a></li>
+<li><a href="#org2080428">1.3.1. Course Home Directory</a></li>
 </ul>
 </li>
-<li><a href="#org6180eb5">1.4. REFERENCES</a>
+<li><a href="#orgeb5e0cc">1.4. REFERENCES</a>
 <ul>
-<li><a href="#orgd106d11">1.4.1. Books</a></li>
-<li><a href="#orge7d3651">1.4.2. Video (in no particular order)</a></li>
-<li><a href="#org83ad992">1.4.3. Pages</a></li>
+<li><a href="#org1931ee7">1.4.1. Books</a></li>
+<li><a href="#orgf9dc75a">1.4.2. Video (in no particular order)</a></li>
+<li><a href="#org955cf11">1.4.3. Pages</a></li>
 </ul>
 </li>
-<li><a href="#orgc8e01ad">1.5. Vocab</a>
+<li><a href="#orgeb3d31a">1.5. Vocab</a>
 <ul>
-<li><a href="#org529fbdd">1.5.1. Turbofish</a></li>
-<li><a href="#orgffe3497">1.5.2. Splitting Borrows</a></li>
-<li><a href="#orgdfd9546">1.5.3. Deref Coercion</a></li>
+<li><a href="#org56e19c3">1.5.1. Turbofish</a></li>
+<li><a href="#org8eea1d5">1.5.2. Splitting Borrows</a></li>
+<li><a href="#org93daef7">1.5.3. Deref Coercion</a></li>
 </ul>
 </li>
-<li><a href="#org09343e2">1.6. Rustonomicon - Iterating over mutable references to elements in a vector</a></li>
-<li><a href="#org5c5808b">1.7. Chapter 10</a>
+<li><a href="#org6ca9540">1.6. Rustonomicon - Iterating over mutable references to elements in a vector</a></li>
+<li><a href="#org3901058">1.7. Chapter 10</a>
 <ul>
-<li><a href="#org48d352c">1.7.1. Blanket Implementations</a></li>
+<li><a href="#org8654ea5">1.7.1. Blanket Implementations</a></li>
 </ul>
 </li>
-<li><a href="#org4526f77">1.8. TOOLS</a></li>
-<li><a href="#org9d91d56">1.9. Questions</a>
+<li><a href="#orgbea1913">1.8. TOOLS</a></li>
+<li><a href="#orgd4faa1c">1.9. Questions</a>
 <ul>
-<li><a href="#org6c18cf1">1.9.1. Chapter7</a></li>
+<li><a href="#org514eade">1.9.1. Chapter7</a></li>
 </ul>
 </li>
-<li><a href="#orgda87b0f">1.10. Objective</a></li>
-<li><a href="#orge76fc29">1.11. PERFORMANCE</a></li>
-<li><a href="#orgaf1f5f4">1.12. Owned Types in structs.</a></li>
-<li><a href="#org7ebaf22">1.13. Old topic ideas.</a>
+<li><a href="#orged6eb19">1.10. Objective</a></li>
+<li><a href="#org5fdc417">1.11. PERFORMANCE</a></li>
+<li><a href="#org2ddd7eb">1.12. Owned Types in structs.</a></li>
+<li><a href="#org97a5f9b">1.13. Old topic ideas.</a>
 <ul>
-<li><a href="#org9cf2da5">1.13.1. Ownership</a></li>
-<li><a href="#orgbeacaea">1.13.2. Null</a></li>
+<li><a href="#org94bed46">1.13.1. Ownership</a></li>
+<li><a href="#orgead65da">1.13.2. Null</a></li>
 </ul>
 </li>
-<li><a href="#org9460b46">1.14. Practical Stuff</a>
+<li><a href="#org20b7269">1.14. Practical Stuff</a>
 <ul>
-<li><a href="#orgbf37451">1.14.1. Setting up Editor</a></li>
-<li><a href="#orge9d4bfc">1.14.2. Editor Considerations</a></li>
+<li><a href="#org7042954">1.14.1. Setting up Editor</a></li>
+<li><a href="#org652f5fa">1.14.2. Editor Considerations</a></li>
 </ul>
 </li>
-<li><a href="#org83eccb4">1.15. ONLINE RUST COURSE BLUEPRINT</a>
+<li><a href="#orgee6dcc8">1.15. ONLINE RUST COURSE BLUEPRINT</a>
 <ul>
-<li><a href="#org47d2359">1.15.1. Facets of Ownership</a></li>
-<li><a href="#org55ba78d">1.15.2. Languages</a></li>
-<li><a href="#org4860fc9">1.15.3. Copy</a></li>
-<li><a href="#org5b9c494">1.15.4. A rust implementation of the lambda-calculus?</a></li>
-<li><a href="#orgc503825">1.15.5. Scopes are owners.</a></li>
-<li><a href="#org6cf70da">1.15.6. Methodology</a></li>
-<li><a href="#org8087668">1.15.7. RUST-O-RAMA bonanza.</a></li>
-<li><a href="#org3527215">1.15.8. What is the global allocator?</a></li>
-<li><a href="#orgc0e1b01">1.15.9. How to train a new Rust member?</a></li>
-<li><a href="#org9653b75">1.15.10. Lifetime Specifier</a></li>
-<li><a href="#org8dc97c8">1.15.11. existing rust courses</a></li>
-<li><a href="#org384d420">1.15.12. Links</a></li>
-<li><a href="#orga8b0b6e">1.15.13. Builder Pattern mitigates verbose constructors of large structs</a></li>
-<li><a href="#orgc047ca0">1.15.14. What's the diff?</a></li>
-<li><a href="#org55d70ab">1.15.15. Philosophy</a></li>
-<li><a href="#org6fb3368">1.15.16. Operational semantics, shortcut notation useful to speed understanding?</a></li>
-<li><a href="#orgf24831a">1.15.17. Closures</a></li>
+<li><a href="#orga6fddf7">1.15.1. Facets of Ownership</a></li>
+<li><a href="#org40e0474">1.15.2. Languages</a></li>
+<li><a href="#orga1db661">1.15.3. Copy</a></li>
+<li><a href="#orgd992fb0">1.15.4. A rust implementation of the lambda-calculus?</a></li>
+<li><a href="#org71aa0ff">1.15.5. Scopes are owners.</a></li>
+<li><a href="#org2fbb3ff">1.15.6. Methodology</a></li>
+<li><a href="#org17c92b0">1.15.7. RUST-O-RAMA bonanza.</a></li>
+<li><a href="#org4da7752">1.15.8. What is the global allocator?</a></li>
+<li><a href="#org799b7df">1.15.9. How to train a new Rust member?</a></li>
+<li><a href="#org99d05e4">1.15.10. Lifetime Specifier</a></li>
+<li><a href="#org4ce13ea">1.15.11. existing rust courses</a></li>
+<li><a href="#org3c9654c">1.15.12. Links</a></li>
+<li><a href="#orgeefb7ba">1.15.13. Builder Pattern mitigates verbose constructors of large structs</a></li>
+<li><a href="#orgbbe53a2">1.15.14. What's the diff?</a></li>
+<li><a href="#org0cb22cf">1.15.15. Philosophy</a></li>
+<li><a href="#org4962a7c">1.15.16. Operational semantics, shortcut notation useful to speed understanding?</a></li>
+<li><a href="#org1c86d60">1.15.17. Closures</a></li>
 </ul>
 </li>
-<li><a href="#orgbf8f278">1.16. Lecture10</a>
+<li><a href="#org532b14b">1.16. Lecture10</a>
 <ul>
-<li><a href="#org9fe83fe">1.16.1. What's a trait?</a></li>
-<li><a href="#orgbc4697c">1.16.2. What's an interface?</a></li>
+<li><a href="#orgfbc33a1">1.16.1. What's a trait?</a></li>
+<li><a href="#org93b7e8f">1.16.2. What's an interface?</a></li>
 </ul>
 </li>
-<li><a href="#orgf51bd0a">1.17. Lecture Heap, aliasing, ownership and borrowing???</a>
+<li><a href="#org0ce92c0">1.17. Lecture Heap, aliasing, ownership and borrowing???</a>
 <ul>
-<li><a href="#org33a64ab">1.17.1. unvetted links</a></li>
-<li><a href="#orgf43836d">1.17.2. Objective</a></li>
+<li><a href="#org6280a85">1.17.1. unvetted links</a></li>
+<li><a href="#org8c4b0f2">1.17.2. Objective</a></li>
 </ul>
 </li>
-<li><a href="#org501cacb">1.18. Possible Omni Project</a>
+<li><a href="#orgdb9a6b7">1.18. Possible Omni Project</a>
 <ul>
-<li><a href="#org50e39d0">1.18.1. Efficient mini scheme interpreter</a></li>
-<li><a href="#org6c45307">1.18.2. Network</a></li>
-<li><a href="#orgf48b153">1.18.3. Emulator</a></li>
+<li><a href="#org919b4a8">1.18.1. Efficient mini scheme interpreter</a></li>
+<li><a href="#org49f52a2">1.18.2. Network</a></li>
+<li><a href="#orgd6c4dfd">1.18.3. Emulator</a></li>
 </ul>
 </li>
-<li><a href="#orgf3f69f1">1.19. Out of scope neat stuff!</a>
+<li><a href="#org0c0c0c3">1.19. Out of scope neat stuff!</a>
 <ul>
-<li><a href="#org959642d">1.19.1. Deep dives</a></li>
-<li><a href="#orgca94391">1.19.2. Hardware</a></li>
-<li><a href="#org116597f">1.19.3. Rust on microcontrollers</a></li>
-<li><a href="#org0460572">1.19.4. C2Rust compiler</a></li>
-<li><a href="#org6fb9dfc">1.19.5. Helping the cause</a></li>
-<li><a href="#org2d86cb4">1.19.6. NEW IDEAS?</a></li>
-<li><a href="#org0da5d53">1.19.7. Scheme Segque</a></li>
-<li><a href="#orgc86d1a8">1.19.8. TOOLS</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#org8cbb995">2. UNSORTED</a>
-<ul>
-<li><a href="#orgee88cca">2.1. Chunking Optimizations: Let the Knife Do the Work (AVX-512)</a></li>
-<li><a href="#orgb3f5f92">2.2. What's up with Cargo.lock?</a></li>
-<li><a href="#org94f4933">2.3. What's up with build scripts?</a></li>
-<li><a href="#org82bfaf5">2.4. Rust Guides</a></li>
-<li><a href="#orgf26a25f">2.5. The Periodic Table of Rust Types</a></li>
-<li><a href="#orgfc9ca5d">2.6. Ownership visualization</a></li>
-</ul>
-</li>
-<li><a href="#org18031b8">3. Rust: Fast and Safe.</a>
-<ul>
-<li><a href="#orgd4a442e">3.1. RefCell</a>
-<ul>
-<li><a href="#orgf687015">3.1.1. How do I return a reference to something inside a RefCell without breaking encapsulation?</a></li>
-<li><a href="#org2ad38b3">3.1.2. exercise ideas</a></li>
+<li><a href="#org6867f2d">1.19.1. Deep dives</a></li>
+<li><a href="#orge5a8a34">1.19.2. Hardware</a></li>
+<li><a href="#org4539788">1.19.3. Rust on microcontrollers</a></li>
+<li><a href="#orge168373">1.19.4. C2Rust compiler</a></li>
+<li><a href="#org716baa4">1.19.5. Helping the cause</a></li>
+<li><a href="#orgb7c0cdb">1.19.6. NEW IDEAS?</a></li>
+<li><a href="#org3f2b3f9">1.19.7. Scheme Segque</a></li>
+<li><a href="#orged91b74">1.19.8. TOOLS</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org4b0bbcb">4. Shared Borrows</a></li>
-<li><a href="#org59a4182">5. Mutable Borrows</a></li>
+<li><a href="#orga2ffedc">2. UNSORTED</a>
+<ul>
+<li><a href="#org8904706">2.1. Rust Battle!</a></li>
+<li><a href="#org898a993">2.2. Arti&amp;cle?</a></li>
+<li><a href="#org7b61058">2.3. Interior mutability patterns</a></li>
+<li><a href="#org2f9cb51">2.4. Chunking Optimizations: Let the Knife Do the Work (AVX-512)</a></li>
+<li><a href="#org290f773">2.5. What's up with Cargo.lock?</a></li>
+<li><a href="#orgdbd6086">2.6. What's up with build scripts?</a></li>
+<li><a href="#orgfbb5e8c">2.7. Rust Guides</a></li>
+<li><a href="#orgad9dd89">2.8. The Periodic Table of Rust Types</a></li>
+<li><a href="#org8d68c53">2.9. Ownership visualization</a></li>
+</ul>
+</li>
+<li><a href="#orgfbfa17f">3. Rust: Fast and Safe.</a>
+<ul>
+<li><a href="#org2fc4af1">3.1. RefCell</a>
+<ul>
+<li><a href="#org1a9fa36">3.1.1. How do I return a reference to something inside a RefCell without breaking encapsulation?</a></li>
+<li><a href="#orgdc0c716">3.1.2. exercise ideas</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org915015a">4. Shared Borrows</a></li>
+<li><a href="#orgb7aea92">5. Mutable Borrows</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd5c6caf" class="outline-2">
-<h2 id="orgd5c6caf"><span class="section-number-2">1</span> Rust: a course under development.</h2>
+<div id="outline-container-org92d8305" class="outline-2">
+<h2 id="org92d8305"><span class="section-number-2">1</span> Rust: a course under development.</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 deployment? a vagrant box? or are people using their own machines?
 </p>
 </div>
 
-<div id="outline-container-org8f32109" class="outline-3">
-<h3 id="org8f32109"><span class="section-number-3">1.1</span> CALENDAR</h3>
+<div id="outline-container-org7a8d39a" class="outline-3">
+<h3 id="org7a8d39a"><span class="section-number-3">1.1</span> CALENDAR</h3>
 <div class="outline-text-3" id="text-1-1">
 </div>
-<div id="outline-container-orgaf6892b" class="outline-4">
-<h4 id="orgaf6892b"><span class="section-number-4">1.1.1</span> Day0 - Tools, Motivation</h4>
+<div id="outline-container-org1656534" class="outline-4">
+<h4 id="org1656534"><span class="section-number-4">1.1.1</span> Day0 - Tools, Motivation</h4>
 <div class="outline-text-4" id="text-1-1-1">
 <ul class="org-ul">
-<li>video1 <a href="#org26beac3">1.4.2.1</a></li>
-<li>Read Chapter 1 of <a href="#orga6b1675">1.4.1.1.1</a></li>
+<li>video1 <a href="#orgad5fba1">1.4.2.1</a></li>
+<li>Read Chapter 1 of <a href="#orge267306">1.4.1.1.1</a></li>
 
 <li>Setting up rust: 
 <a href="https://www.rust-lang.org/tools/install">https://www.rust-lang.org/tools/install</a></li>
@@ -429,28 +432,28 @@ deployment? a vagrant box? or are people using their own machines?
 </div>
 </div>
 
-<div id="outline-container-org95fdef8" class="outline-4">
-<h4 id="org95fdef8"><span class="section-number-4">1.1.2</span> Day1 - Ownership</h4>
+<div id="outline-container-org89b70f7" class="outline-4">
+<h4 id="org89b70f7"><span class="section-number-4">1.1.2</span> Day1 - Ownership</h4>
 <div class="outline-text-4" id="text-1-1-2">
 <ul class="org-ul">
 <li>getting the editor up and running.
 <a href="https://www.rust-lang.org/tools">https://www.rust-lang.org/tools</a></li>
 
-<li>clone: <a href="#orgf9d7116">1.4.3.3</a> into <a href="#orgc89bb27">1.3.1</a>
+<li>clone: <a href="#orge7bc61b">1.4.3.3</a> into <a href="#org2080428">1.3.1</a>
 (to shield scholars from this detail?)</li>
 
-<li>watch: video1 <a href="#orgf68eacf">1.4.2.2</a> &amp; ex D1E1</li>
-<li>watch: video2 <a href="#org645a7ea">1.4.2.3</a> &amp; ex D1E2</li>
+<li>watch: video1 <a href="#org0d60d33">1.4.2.2</a> &amp; ex D1E1</li>
+<li>watch: video2 <a href="#org40b033a">1.4.2.3</a> &amp; ex D1E2</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org2adb089" class="outline-4">
-<h4 id="org2adb089"><span class="section-number-4">1.1.3</span> Day2 - Ownership</h4>
+<div id="outline-container-org5d053fb" class="outline-4">
+<h4 id="org5d053fb"><span class="section-number-4">1.1.3</span> Day2 - Ownership</h4>
 <div class="outline-text-4" id="text-1-1-3">
 <ul class="org-ul">
-<li>watch: video1 <a href="#org4b0bbcb">4</a> &amp; ex D2E1, D2E2</li>
-<li>watch: video2 <a href="#org59a4182">5</a> &amp; ex D2E3</li>
+<li>watch: video1 <a href="#org915015a">4</a> &amp; ex D2E1, D2E2</li>
+<li>watch: video2 <a href="#orgb7aea92">5</a> &amp; ex D2E3</li>
 
 <li>Another take.
 Memory, Ownership and Borrowing
@@ -461,8 +464,8 @@ Memory, Ownership and Borrowing
 </div>
 </div>
 
-<div id="outline-container-orgf156af5" class="outline-4">
-<h4 id="orgf156af5"><span class="section-number-4">1.1.4</span> Day3 - Ownership (snoyman's take)</h4>
+<div id="outline-container-org36d96cc" class="outline-4">
+<h4 id="org36d96cc"><span class="section-number-4">1.1.4</span> Day3 - Ownership (snoyman's take)</h4>
 <div class="outline-text-4" id="text-1-1-4">
 <p>
 Do Tutorial
@@ -471,13 +474,13 @@ Do Tutorial
 <li><a href="https://www.snoyman.com/blog/2018/10/rust-crash-course-02-basics-of-ownership">https://www.snoyman.com/blog/2018/10/rust-crash-course-02-basics-of-ownership</a></li>
 </ul>
 <p>
-+<a href="#org2553a1f">1.4.3.9</a>
++<a href="#orgbcd3200">1.4.3.9</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-org5b7c324" class="outline-4">
-<h4 id="org5b7c324"><span class="section-number-4">1.1.5</span> Day ------------------------------------------------------------------</h4>
+<div id="outline-container-orgb921870" class="outline-4">
+<h4 id="orgb921870"><span class="section-number-4">1.1.5</span> Day ------------------------------------------------------------------</h4>
 <div class="outline-text-4" id="text-1-1-5">
 <p>
 Make sure $editor feature "goto-definition" works.  Need to be
@@ -501,8 +504,8 @@ Work through Chapter 2 of the book.
 </div>
 </div>
 
-<div id="outline-container-org0bf21fc" class="outline-4">
-<h4 id="org0bf21fc"><span class="section-number-4">1.1.6</span> Day ------------------------------------------------------------------</h4>
+<div id="outline-container-org6c56d34" class="outline-4">
+<h4 id="org6c56d34"><span class="section-number-4">1.1.6</span> Day ------------------------------------------------------------------</h4>
 <div class="outline-text-4" id="text-1-1-6">
 <p>
 Chapter 3, Getting a feel for the language, this material will
@@ -511,8 +514,8 @@ probably be more familiar.
 </div>
 </div>
 
-<div id="outline-container-orgef3cc47" class="outline-4">
-<h4 id="orgef3cc47"><span class="section-number-4">1.1.7</span> Day</h4>
+<div id="outline-container-orgb375ac0" class="outline-4">
+<h4 id="orgb375ac0"><span class="section-number-4">1.1.7</span> Day</h4>
 <div class="outline-text-4" id="text-1-1-7">
 <p>
 Chapter 4 of the book, take your time.
@@ -520,8 +523,8 @@ Chapter 4 of the book, take your time.
 </div>
 </div>
 
-<div id="outline-container-org7dc55ed" class="outline-4">
-<h4 id="org7dc55ed"><span class="section-number-4">1.1.8</span> Day</h4>
+<div id="outline-container-org4ea5ca7" class="outline-4">
+<h4 id="org4ea5ca7"><span class="section-number-4">1.1.8</span> Day</h4>
 <div class="outline-text-4" id="text-1-1-8">
 <p>
 Optimizing Factorial.
@@ -529,8 +532,8 @@ Optimizing Factorial.
 </div>
 </div>
 
-<div id="outline-container-orgf487566" class="outline-4">
-<h4 id="orgf487566"><span class="section-number-4">1.1.9</span> Day</h4>
+<div id="outline-container-orgfea8ef9" class="outline-4">
+<h4 id="orgfea8ef9"><span class="section-number-4">1.1.9</span> Day</h4>
 <div class="outline-text-4" id="text-1-1-9">
 <p>
 Chapter [6]
@@ -539,8 +542,8 @@ work through PROJECT:1 A Bad Stack
 </div>
 </div>
 
-<div id="outline-container-org96400b5" class="outline-4">
-<h4 id="org96400b5"><span class="section-number-4">1.1.10</span> Day</h4>
+<div id="outline-container-org7adcebd" class="outline-4">
+<h4 id="org7adcebd"><span class="section-number-4">1.1.10</span> Day</h4>
 <div class="outline-text-4" id="text-1-1-10">
 <p>
 Optimizing Matrix Multiplication
@@ -548,8 +551,8 @@ Optimizing Matrix Multiplication
 </div>
 </div>
 
-<div id="outline-container-org2ad1cd5" class="outline-4">
-<h4 id="org2ad1cd5"><span class="section-number-4">1.1.11</span> Day</h4>
+<div id="outline-container-orgdbf3dfd" class="outline-4">
+<h4 id="orgdbf3dfd"><span class="section-number-4">1.1.11</span> Day</h4>
 <div class="outline-text-4" id="text-1-1-11">
 <p>
 RustConf 2018 - Benchmarking and Optimization of Rust Libraries by Paul Mason
@@ -563,7 +566,7 @@ RustConf 2018 - Benchmarking and Optimization of Rust Libraries by Paul Mason
 </div>
 
 <ol class="org-ol">
-<li><a id="orgc48a13d"></a>Measure.<br />
+<li><a id="org604da5a"></a>Measure.<br />
 <div class="outline-text-5" id="text-1-1-11-1">
 <p>
 #[bench]
@@ -571,7 +574,7 @@ RustConf 2018 - Benchmarking and Optimization of Rust Libraries by Paul Mason
 </div>
 
 <ol class="org-ol">
-<li><a id="orgf9f3d34"></a>comparing benches from run to run, better than spreadsheets.<br />
+<li><a id="org29ac863"></a>comparing benches from run to run, better than spreadsheets.<br />
 <div class="outline-text-6" id="text-1-1-11-1-1">
 <ul class="org-ul">
 <li>cargo-benchcmp
@@ -583,9 +586,9 @@ Has graphs!
 </div>
 </li>
 
-<li><a id="org4095d3b"></a>Microbench<br /></li>
-<li><a id="org51a998d"></a>Macrobench<br /></li>
-<li><a id="org0b1e62a"></a>Bounds checking with sized array<br />
+<li><a id="orgdb3a24a"></a>Microbench<br /></li>
+<li><a id="orge093db2"></a>Macrobench<br /></li>
+<li><a id="orgd74b319"></a>Bounds checking with sized array<br />
 <div class="outline-text-6" id="text-1-1-11-1-4">
 <p>
 <a href="https://youtu.be/d2ZQ9-4ZJmQ?t=1058">https://youtu.be/d2ZQ9-4ZJmQ?t=1058</a>
@@ -602,8 +605,8 @@ keep functions smaller to take advantage of #[inline]
 </ol>
 </div>
 
-<div id="outline-container-orgbb9af85" class="outline-4">
-<h4 id="orgbb9af85"><span class="section-number-4">1.1.12</span> Day</h4>
+<div id="outline-container-org44267d7" class="outline-4">
+<h4 id="org44267d7"><span class="section-number-4">1.1.12</span> Day</h4>
 <div class="outline-text-4" id="text-1-1-12">
 <p>
 exercises for Guard, Rc, Arc, Mutex.
@@ -611,7 +614,7 @@ exercises for Guard, Rc, Arc, Mutex.
 </div>
 
 <ol class="org-ol">
-<li><a id="orgbc9bab7"></a>Smart Pointers<br />
+<li><a id="org5d3cf43"></a>Smart Pointers<br />
 <div class="outline-text-5" id="text-1-1-12-1">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -667,8 +670,8 @@ exercises for Guard, Rc, Arc, Mutex.
 </ol>
 </div>
 
-<div id="outline-container-orgffee287" class="outline-4">
-<h4 id="orgffee287"><span class="section-number-4">1.1.13</span> Day</h4>
+<div id="outline-container-orgdd0d8ab" class="outline-4">
+<h4 id="orgdd0d8ab"><span class="section-number-4">1.1.13</span> Day</h4>
 <div class="outline-text-4" id="text-1-1-13">
 <p>
 Concurrency: <a href="https://www.youtube.com/watch?v=Dbytx0ivH7Q">https://www.youtube.com/watch?v=Dbytx0ivH7Q</a>
@@ -698,7 +701,7 @@ More on concurrency
 </div>
 
 <ol class="org-ol">
-<li><a id="org091ed4e"></a>What is virtual dispatch in rust?<br />
+<li><a id="orgc228fc0"></a>What is virtual dispatch in rust?<br />
 <div class="outline-text-5" id="text-1-1-13-1">
 <p>
 that's like c++ virtual table, is now called dynamic dispatch.
@@ -706,7 +709,7 @@ that's like c++ virtual table, is now called dynamic dispatch.
 </div>
 </li>
 
-<li><a id="orgb806991"></a>Tokio: mio + futures<br />
+<li><a id="orgea89ae2"></a>Tokio: mio + futures<br />
 <div class="outline-text-5" id="text-1-1-13-2">
 <ul class="org-ul">
 <li>mio cross platform interface</li>
@@ -716,27 +719,27 @@ that's like c++ virtual table, is now called dynamic dispatch.
 </div>
 </li>
 
-<li><a id="org5f59e6f"></a>PROJECTS<br />
+<li><a id="org75ee4dc"></a>PROJECTS<br />
 <ol class="org-ol">
-<li><a id="org2d70ba7"></a>Definitely Do:<br />
+<li><a id="org864146b"></a>Definitely Do:<br />
 <ol class="org-ol">
-<li><a id="org3d24834"></a>TOO MANY LISTS.<br />
+<li><a id="org1f85bd7"></a>TOO MANY LISTS.<br />
 <ol class="org-ol">
-<li><a id="orgb5c7a6e"></a>1) A Bad Stack<br />
+<li><a id="org55855f9"></a>1) A Bad Stack<br />
 <div class="outline-text-8" id="text-1-1-13-3-1-1-1">
 <p>
 <a href="https://rust-unofficial.github.io/too-many-lists/first-pop.html">https://rust-unofficial.github.io/too-many-lists/first-pop.html</a>
 </p>
 </div>
 </li>
-<li><a id="org85869a7"></a>2) An Ok Stack<br />
+<li><a id="org014820d"></a>2) An Ok Stack<br />
 <div class="outline-text-8" id="text-1-1-13-3-1-1-2">
 <p>
 <a href="https://rust-unofficial.github.io/too-many-lists/second.html">https://rust-unofficial.github.io/too-many-lists/second.html</a>
 </p>
 </div>
 </li>
-<li><a id="orgfeac11b"></a>3) A persistant Stack<br />
+<li><a id="org3e3b6a8"></a>3) A persistant Stack<br />
 <div class="outline-text-8" id="text-1-1-13-3-1-1-3">
 <p>
 <a href="https://rust-unofficial.github.io/too-many-lists/third.html">https://rust-unofficial.github.io/too-many-lists/third.html</a>
@@ -748,7 +751,7 @@ that's like c++ virtual table, is now called dynamic dispatch.
 </ol>
 </li>
 
-<li><a id="orgf27afc1"></a>After TOO MANY LISTS, Implement Skip lists<br />
+<li><a id="orgc448fe3"></a>After TOO MANY LISTS, Implement Skip lists<br />
 <div class="outline-text-6" id="text-1-1-13-3-2">
 <p>
 <a href="https://opendatastructures.org/ods-python-screen.pdf">https://opendatastructures.org/ods-python-screen.pdf</a>
@@ -756,7 +759,7 @@ that's like c++ virtual table, is now called dynamic dispatch.
 </div>
 </li>
 
-<li><a id="org863c251"></a>Lambda Calculus interpreter<br />
+<li><a id="org99bf07f"></a>Lambda Calculus interpreter<br />
 <div class="outline-text-6" id="text-1-1-13-3-3">
 <p>
 λ. x x
@@ -764,7 +767,7 @@ that's like c++ virtual table, is now called dynamic dispatch.
 </div>
 </li>
 
-<li><a id="org80eadda"></a>After Skip lists, implement red black tree found in Chapter 9<br />
+<li><a id="orgc0480cf"></a>After Skip lists, implement red black tree found in Chapter 9<br />
 <div class="outline-text-6" id="text-1-1-13-3-4">
 <p>
 <a href="https://opendatastructures.org/ods-python-screen.pdf">https://opendatastructures.org/ods-python-screen.pdf</a>
@@ -772,7 +775,7 @@ that's like c++ virtual table, is now called dynamic dispatch.
 </div>
 </li>
 
-<li><a id="org93ea2d6"></a>Create a custom Hasher for HashMap<br />
+<li><a id="org7a04fe8"></a>Create a custom Hasher for HashMap<br />
 <div class="outline-text-6" id="text-1-1-13-3-5">
 <p>
 <a href="https://www.131002.net/siphash/siphash.pdf">https://www.131002.net/siphash/siphash.pdf</a>
@@ -780,7 +783,7 @@ that's like c++ virtual table, is now called dynamic dispatch.
 </div>
 </li>
 
-<li><a id="orgaee6764"></a>QuadTree<br />
+<li><a id="orgc1dfbec"></a>QuadTree<br />
 <div class="outline-text-6" id="text-1-1-13-3-6">
 <p>
 WASM Web field simulator.
@@ -796,25 +799,25 @@ WASM Web field simulator.
 
 
 
-<div id="outline-container-orga91de73" class="outline-3">
-<h3 id="orga91de73"><span class="section-number-3">1.2</span> STRUCTURE</h3>
+<div id="outline-container-org6c8094c" class="outline-3">
+<h3 id="org6c8094c"><span class="section-number-3">1.2</span> STRUCTURE</h3>
 <div class="outline-text-3" id="text-1-2">
 </div>
-<div id="outline-container-org8c3ba87" class="outline-4">
-<h4 id="org8c3ba87"><span class="section-number-4">1.2.1</span> PEDAGOGY</h4>
+<div id="outline-container-orgc802d80" class="outline-4">
+<h4 id="orgc802d80"><span class="section-number-4">1.2.1</span> PEDAGOGY</h4>
 <div class="outline-text-4" id="text-1-2-1">
 </div>
 <ol class="org-ol">
-<li><a id="orgc1e4fc9"></a>Re-asking original questions from stack overflow, rust forum<br />
+<li><a id="org24fac48"></a>Re-asking original questions from stack overflow, rust forum<br />
 <ol class="org-ol">
-<li><a id="orgc4b591f"></a>What are the differences between Rust's `String` and `str`?<br />
+<li><a id="orgcb447ca"></a>What are the differences between Rust's `String` and `str`?<br />
 <div class="outline-text-6" id="text-1-2-1-1-1">
 <p>
 <a href="https://stackoverflow.com/questions/24158114/what-are-the-differences-between-rusts-string-and-str/24159933#24159933">https://stackoverflow.com/questions/24158114/what-are-the-differences-between-rusts-string-and-str/24159933#24159933</a>
 </p>
 </div>
 </li>
-<li><a id="org6de110c"></a>How to enable/disable assertions in rust programs?<br />
+<li><a id="org5118c49"></a>How to enable/disable assertions in rust programs?<br />
 <div class="outline-text-6" id="text-1-2-1-1-2">
 <p>
 <a href="https://doc.rust-lang.org/std/macro.assert.html">https://doc.rust-lang.org/std/macro.assert.html</a>
@@ -827,7 +830,7 @@ enabled in release builds by default.
 </ol>
 </li>
 
-<li><a id="org1206ed5"></a>Incrementally Removing Functionality For Guided Projects<br />
+<li><a id="org5aa1a6f"></a>Incrementally Removing Functionality For Guided Projects<br />
 <div class="outline-text-5" id="text-1-2-1-2">
 <p>
 So build a full project with lots of tests that work.  At this point
@@ -873,9 +876,9 @@ students could upload solutions and get a keys to the next git commit.
 </div>
 </li>
 
-<li><a id="org6c2da50"></a>Borrow from 6.005 &amp; 6.172<br />
+<li><a id="org744f4f4"></a>Borrow from 6.005 &amp; 6.172<br />
 <ol class="org-ol">
-<li><a id="orge949989"></a>6.172 SPEED.<br />
+<li><a id="orgddc7d17"></a>6.172 SPEED.<br />
 <div class="outline-text-6" id="text-1-2-1-3-1">
 <ul class="org-ul">
 <li>Loop Fusion, jamming.
@@ -890,7 +893,7 @@ cargo asm my<sub>crate</sub>::my<sub>function</sub></li>
 </ol>
 </li>
 
-<li><a id="orgf3409a7"></a>APPROACH<br />
+<li><a id="org5dbf403"></a>APPROACH<br />
 <div class="outline-text-5" id="text-1-2-1-4">
 <p>
 <a href="https://github.com/ctjhoa/rust-learning">https://github.com/ctjhoa/rust-learning</a>
@@ -927,26 +930,26 @@ credit.
 
 <ul class="org-ul">
 <li>N topics while minding fast&amp;safe</li>
-<li><a href="#org28e80e9">1.4.3.6</a></li>
+<li><a href="#orgd033d2e">1.4.3.6</a></li>
 </ul>
 </div>
 </li>
 
-<li><a id="orgf43f36a"></a>Topics<br />
+<li><a id="org47c7b20"></a>Topics<br />
 <ol class="org-ol">
-<li><a id="orgbb72b5c"></a>Ownership<br />
+<li><a id="org7e4d726"></a>Ownership<br />
 <ol class="org-ol">
-<li><a id="orgdc2cfb6"></a>Types of owners<br />
+<li><a id="org116cc05"></a>Types of owners<br />
 <div class="outline-text-7" id="text-1-2-1-5-1-1">
 <ul class="org-ul">
-<li><a href="#org2553a1f">1.4.3.9</a></li>
+<li><a href="#orgbcd3200">1.4.3.9</a></li>
 <li>Scopes</li>
 <li>Data and some Types: String, structs, enums, etc. not str.</li>
 </ul>
 </div>
 </li>
 
-<li><a id="orgd4380d4"></a>Dependencies<br />
+<li><a id="org639b069"></a>Dependencies<br />
 <div class="outline-text-7" id="text-1-2-1-5-1-2">
 <p>
 Drop, Lifetime
@@ -967,8 +970,8 @@ Drop trait. Are integers dropped?
 </ol>
 </li>
 
-<li><a id="orgd347229"></a>Borrowing<br /></li>
-<li><a id="orgf24e224"></a>Lifetimes<br />
+<li><a id="org25d1b82"></a>Borrowing<br /></li>
+<li><a id="orgf55f48c"></a>Lifetimes<br />
 <div class="outline-text-6" id="text-1-2-1-5-3">
 <p>
 what has a lifetime?
@@ -976,18 +979,18 @@ what has a lifetime?
 </div>
 </li>
 
-<li><a id="orgba72bca"></a>Data<br />
+<li><a id="orgb2d9d93"></a>Data<br />
 <ol class="org-ol">
-<li><a id="org4db9ab0"></a>Slices<br /></li>
-<li><a id="org54c7155"></a>Enum<br /></li>
-<li><a id="orga721ce7"></a>Structs<br /></li>
-<li><a id="orgdc9f5ef"></a>Vectors<br /></li>
-<li><a id="org1eb4f72"></a>Strings<br /></li>
-<li><a id="org48ec93c"></a>HashMaps<br /></li>
+<li><a id="org4c9e0ed"></a>Slices<br /></li>
+<li><a id="orgbb2b948"></a>Enum<br /></li>
+<li><a id="org15c2b9e"></a>Structs<br /></li>
+<li><a id="org37d470f"></a>Vectors<br /></li>
+<li><a id="org6a3c93b"></a>Strings<br /></li>
+<li><a id="orga59f26f"></a>HashMaps<br /></li>
 </ol>
 </li>
 
-<li><a id="orge16544e"></a>Design modularity<br />
+<li><a id="orgf53e52f"></a>Design modularity<br />
 <div class="outline-text-6" id="text-1-2-1-5-5">
 <p>
 Coupling
@@ -1000,7 +1003,7 @@ Generics
 </div>
 </li>
 
-<li><a id="org917005d"></a>Testing as you go<br />
+<li><a id="org2aaa114"></a>Testing as you go<br />
 <div class="outline-text-6" id="text-1-2-1-5-6">
 <p>
 <a href="https://doc.rust-lang.org/book/ch12-04-testing-the-librarys-functionality.html">https://doc.rust-lang.org/book/ch12-04-testing-the-librarys-functionality.html</a>
@@ -1009,12 +1012,12 @@ Generics
 </li>
 
 
-<li><a id="orgf3580c2"></a>each concept has 3 exercises<br /></li>
-<li><a id="org82ba1f9"></a>each exercise views the concept 3 ways<br /></li>
+<li><a id="org519d166"></a>each concept has 3 exercises<br /></li>
+<li><a id="org7140449"></a>each exercise views the concept 3 ways<br /></li>
 </ol>
 </li>
 
-<li><a id="orgf74d8a4"></a>General Programming concepts in rust<br />
+<li><a id="org768780c"></a>General Programming concepts in rust<br />
 <div class="outline-text-5" id="text-1-2-1-6">
 <p>
 Mutability
@@ -1024,7 +1027,7 @@ Modules
 </li>
 
 
-<li><a id="orgb8c017b"></a>How deep to go on these data structures?<br />
+<li><a id="orge812897"></a>How deep to go on these data structures?<br />
 <div class="outline-text-5" id="text-1-2-1-7">
 <p>
 Why not spend a whole day on each one? Learn how to study how the data
@@ -1037,12 +1040,12 @@ other data structures work.
 </div>
 </div>
 
-<div id="outline-container-org51ee2d0" class="outline-3">
-<h3 id="org51ee2d0"><span class="section-number-3">1.3</span> INFO</h3>
+<div id="outline-container-orgdfab974" class="outline-3">
+<h3 id="orgdfab974"><span class="section-number-3">1.3</span> INFO</h3>
 <div class="outline-text-3" id="text-1-3">
 </div>
-<div id="outline-container-orgc89bb27" class="outline-4">
-<h4 id="orgc89bb27"><span class="section-number-4">1.3.1</span> Course Home Directory</h4>
+<div id="outline-container-org2080428" class="outline-4">
+<h4 id="org2080428"><span class="section-number-4">1.3.1</span> Course Home Directory</h4>
 <div class="outline-text-4" id="text-1-3-1">
 <p>
 This refers to the root directory of the course, you'll have to pick a
@@ -1056,46 +1059,46 @@ mkdir -p ~/courses/rust-fast-and-safe
 </div>
 </div>
 
-<div id="outline-container-org6180eb5" class="outline-3">
-<h3 id="org6180eb5"><span class="section-number-3">1.4</span> REFERENCES</h3>
+<div id="outline-container-orgeb5e0cc" class="outline-3">
+<h3 id="orgeb5e0cc"><span class="section-number-3">1.4</span> REFERENCES</h3>
 <div class="outline-text-3" id="text-1-4">
 </div>
-<div id="outline-container-orgd106d11" class="outline-4">
-<h4 id="orgd106d11"><span class="section-number-4">1.4.1</span> Books</h4>
+<div id="outline-container-org1931ee7" class="outline-4">
+<h4 id="org1931ee7"><span class="section-number-4">1.4.1</span> Books</h4>
 <div class="outline-text-4" id="text-1-4-1">
 </div>
 <ol class="org-ol">
-<li><a id="org3e2b551"></a>Rust Books<br />
+<li><a id="org6ef4277"></a>Rust Books<br />
 <ol class="org-ol">
-<li><a id="orga6b1675"></a>The Rust Book<br />
+<li><a id="orge267306"></a>The Rust Book<br />
 <div class="outline-text-6" id="text-1-4-1-1-1">
 <p>
 <a href="https://doc.rust-lang.org/book/">https://doc.rust-lang.org/book/</a>
 </p>
 </div>
 </li>
-<li><a id="orgb07a4ee"></a>The Rustonomicon<br />
+<li><a id="org58dbc76"></a>The Rustonomicon<br />
 <div class="outline-text-6" id="text-1-4-1-1-2">
 <p>
 <a href="https://doc.rust-lang.org/nomicon/">https://doc.rust-lang.org/nomicon/</a>
 </p>
 </div>
 </li>
-<li><a id="org1f38480"></a>The Rust cookbook<br />
+<li><a id="orgeb17d8e"></a>The Rust cookbook<br />
 <div class="outline-text-6" id="text-1-4-1-1-3">
 <p>
 <a href="https://rust-lang-nursery.github.io/rust-cookbook">https://rust-lang-nursery.github.io/rust-cookbook</a>
 </p>
 </div>
 </li>
-<li><a id="orgaa5b909"></a>Rust By Example<br />
+<li><a id="org0d532bb"></a>Rust By Example<br />
 <div class="outline-text-6" id="text-1-4-1-1-4">
 <p>
 <a href="https://doc.rust-lang.org/rust-by-example/fn/closures.html">https://doc.rust-lang.org/rust-by-example/fn/closures.html</a>
 </p>
 </div>
 </li>
-<li><a id="org0f398fd"></a>The Cargo Book<br />
+<li><a id="orgb1bbe09"></a>The Cargo Book<br />
 <div class="outline-text-6" id="text-1-4-1-1-5">
 <p>
 <a href="https://doc.rust-lang.org/cargo/index.html">https://doc.rust-lang.org/cargo/index.html</a>
@@ -1104,9 +1107,9 @@ mkdir -p ~/courses/rust-fast-and-safe
 </li>
 </ol>
 </li>
-<li><a id="orgd166088"></a>Other Books<br />
+<li><a id="org2047d09"></a>Other Books<br />
 <ol class="org-ol">
-<li><a id="org51cb38d"></a>Open Data Structures<br />
+<li><a id="orgb3fb00b"></a>Open Data Structures<br />
 <div class="outline-text-6" id="text-1-4-1-2-1">
 <p>
 <a href="https://opendatastructures.org/ods-python-screen.pdf">https://opendatastructures.org/ods-python-screen.pdf</a>
@@ -1117,40 +1120,40 @@ mkdir -p ~/courses/rust-fast-and-safe
 </li>
 </ol>
 </div>
-<div id="outline-container-orge7d3651" class="outline-4">
-<h4 id="orge7d3651"><span class="section-number-4">1.4.2</span> Video (in no particular order)</h4>
+<div id="outline-container-orgf9dc75a" class="outline-4">
+<h4 id="orgf9dc75a"><span class="section-number-4">1.4.2</span> Video (in no particular order)</h4>
 <div class="outline-text-4" id="text-1-4-2">
 </div>
 <ol class="org-ol">
-<li><a id="org26beac3"></a>Why Rust?<br />
+<li><a id="orgad5fba1"></a>Why Rust?<br />
 <div class="outline-text-5" id="text-1-4-2-1">
 <p>
 <a href="http://intorust.com/tutorial/why-rust/">http://intorust.com/tutorial/why-rust/</a>
 </p>
 </div>
 </li>
-<li><a id="orgf68eacf"></a>Hello, World!<br />
+<li><a id="org0d60d33"></a>Hello, World!<br />
 <div class="outline-text-5" id="text-1-4-2-2">
 <p>
 <a href="http://intorust.com/tutorial/hello-world/">http://intorust.com/tutorial/hello-world/</a>
 </p>
 </div>
 </li>
-<li><a id="org645a7ea"></a>IntoRust: Ownership<br />
+<li><a id="org40b033a"></a>IntoRust: Ownership<br />
 <div class="outline-text-5" id="text-1-4-2-3">
 <p>
 <a href="http://intorust.com/tutorial/ownership/">http://intorust.com/tutorial/ownership/</a>
 </p>
 </div>
 </li>
-<li><a id="org806984a"></a>Ownership in Rust with Carol Nichols and Jake Goulding<br />
+<li><a id="orgaf0e625"></a>Ownership in Rust with Carol Nichols and Jake Goulding<br />
 <div class="outline-text-5" id="text-1-4-2-4">
 <p>
 <a href="https://www.youtube.com/watch?v=iV4x_2tcVT8">https://www.youtube.com/watch?v=iV4x_2tcVT8</a>
 </p>
 </div>
 </li>
-<li><a id="orge1076a5"></a>Rust Programming Techniques<br />
+<li><a id="org57fb0ba"></a>Rust Programming Techniques<br />
 <div class="outline-text-5" id="text-1-4-2-5">
 <p>
 <a href="https://www.youtube.com/watch?v=vqavdUGKeb4">https://www.youtube.com/watch?v=vqavdUGKeb4</a>
@@ -1161,12 +1164,12 @@ Exercise @ 54:55
 </ol>
 </div>
 
-<div id="outline-container-org83ad992" class="outline-4">
-<h4 id="org83ad992"><span class="section-number-4">1.4.3</span> Pages</h4>
+<div id="outline-container-org955cf11" class="outline-4">
+<h4 id="org955cf11"><span class="section-number-4">1.4.3</span> Pages</h4>
 <div class="outline-text-4" id="text-1-4-3">
 </div>
 <ol class="org-ol">
-<li><a id="orgd31d0f2"></a>Official Rust Home<br />
+<li><a id="org3cb215d"></a>Official Rust Home<br />
 <div class="outline-text-5" id="text-1-4-3-1">
 <p>
 <a href="https://doc.rust-lang.org/">https://doc.rust-lang.org/</a>
@@ -1174,7 +1177,7 @@ Exercise @ 54:55
 </div>
 </li>
 
-<li><a id="orgbadd31b"></a>Into Rust<br />
+<li><a id="org0b40ec4"></a>Into Rust<br />
 <div class="outline-text-5" id="text-1-4-3-2">
 <p>
 <a href="http://intorust.com/">http://intorust.com/</a>
@@ -1182,7 +1185,7 @@ Exercise @ 54:55
 </div>
 </li>
 
-<li><a id="orgf9d7116"></a>Rustlings<br />
+<li><a id="orge7bc61b"></a>Rustlings<br />
 <div class="outline-text-5" id="text-1-4-3-3">
 <p>
 <a href="https://github.com/rust-lang/rustlings/">https://github.com/rust-lang/rustlings/</a>
@@ -1190,9 +1193,9 @@ Exercise @ 54:55
 </div>
 </li>
 
-<li><a id="org0793fe3"></a>Snoyman's Rust Crash Course<br />
+<li><a id="org402b4a9"></a>Snoyman's Rust Crash Course<br />
 <ol class="org-ol">
-<li><a id="org66ad2eb"></a>Basics of ownership 1<br />
+<li><a id="orgde3c146"></a>Basics of ownership 1<br />
 <div class="outline-text-6" id="text-1-4-3-4-1">
 <p>
 <a href="https://www.snoyman.com/series/rust-crash-course">https://www.snoyman.com/series/rust-crash-course</a>
@@ -1207,7 +1210,7 @@ SOLUTIONS:
 </ol>
 </li>
 
-<li><a id="orgbc59892"></a>Rust Tutorial 2014<br />
+<li><a id="org5dbddb4"></a>Rust Tutorial 2014<br />
 <div class="outline-text-5" id="text-1-4-3-5">
 <p>
 <a href="http://pnkfx.org/rust-examples-icfp2014/">http://pnkfx.org/rust-examples-icfp2014/</a>
@@ -1215,45 +1218,45 @@ SOLUTIONS:
 </div>
 </li>
 
-<li><a id="org28e80e9"></a>DarinM223 : The main concepts in Rust<br />
+<li><a id="orgd033d2e"></a>DarinM223 : The main concepts in Rust<br />
 <div class="outline-text-5" id="text-1-4-3-6">
 <p>
 <a href="https://gist.github.com/DarinM223/e7237114cfdcf3644f90">https://gist.github.com/DarinM223/e7237114cfdcf3644f90</a>
 </p>
 </div>
 </li>
-<li><a id="org635703e"></a>Guidelines on Benchmarking and Rust<br />
+<li><a id="org4629d34"></a>Guidelines on Benchmarking and Rust<br />
 <div class="outline-text-5" id="text-1-4-3-7">
 <p>
 <a href="https://nbsoftsolutions.com/blog/guidelines-on-benchmarking-and-rust">https://nbsoftsolutions.com/blog/guidelines-on-benchmarking-and-rust</a>
 </p>
 </div>
 </li>
-<li><a id="org93f7ba7"></a>Doc Tests<br />
+<li><a id="org7e3140e"></a>Doc Tests<br />
 <div class="outline-text-5" id="text-1-4-3-8">
 <p>
 <a href="https://doc.rust-lang.org/rustdoc/documentation-tests.html">https://doc.rust-lang.org/rustdoc/documentation-tests.html</a>
 </p>
 </div>
 </li>
-<li><a id="org2553a1f"></a>Scope and Ownership in Rust<br />
+<li><a id="orgbcd3200"></a>Scope and Ownership in Rust<br />
 <div class="outline-text-5" id="text-1-4-3-9">
 <p>
 <a href="https://tutorialedge.net/rust/scope-ownership-in-rust/">https://tutorialedge.net/rust/scope-ownership-in-rust/</a>
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="org011695d"></a>Exercises<br />
+<li><a id="orgf9041f7"></a>Exercises<br />
 <ol class="org-ol">
-<li><a id="org9dc7ae1"></a>Demonstrating life times by storing references in collections<br /></li>
-<li><a id="org7ff61c4"></a>Implementing 6 types of linked lists.<br />
+<li><a id="orge2ce896"></a>Demonstrating life times by storing references in collections<br /></li>
+<li><a id="org521bca5"></a>Implementing 6 types of linked lists.<br />
 <div class="outline-text-7" id="text-1-4-3-9-1-2">
 <p>
 <a href="https://rust-unofficial.github.io/too-many-lists/first-pop.html">https://rust-unofficial.github.io/too-many-lists/first-pop.html</a>
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="org6a4f96d"></a>notes:<br />
+<li><a id="org2adfa50"></a>notes:<br />
 <div class="outline-text-8" id="text-1-4-3-9-1-2-1">
 <ol class="org-ol">
 <li>quickly skimmed introduction</li>
@@ -1278,18 +1281,18 @@ next, don't copy paste these exercises type it all in,
 </li>
 
 
-<li><a id="org4089420"></a>Memory<br />
+<li><a id="orgb435e24"></a>Memory<br />
 <ol class="org-ol">
-<li><a id="orgae628ab"></a>Facets<br />
+<li><a id="org227bb2d"></a>Facets<br />
 <div class="outline-text-7" id="text-1-4-3-9-2-1">
 <p>
 Aliasing, how many pointers have this address?
 </p>
 </div>
 </li>
-<li><a id="orgdaf51d8"></a>Pointers<br />
+<li><a id="org4c363ba"></a>Pointers<br />
 <ol class="org-ol">
-<li><a id="org27b6194"></a>What is a box?<br />
+<li><a id="org4671d2a"></a>What is a box?<br />
 <div class="outline-text-8" id="text-1-4-3-9-2-2-1">
 <p>
 uses global allocator
@@ -1299,12 +1302,12 @@ A pointer type for heap allocation.
 </div>
 </li>
 
-<li><a id="orgd1abd5d"></a>Smart Pointers<br />
+<li><a id="org07c28f8"></a>Smart Pointers<br />
 <ol class="org-ol">
-<li><a id="org216e07f"></a>RC a reference counted type enabling multiple ownership<br /></li>
-<li><a id="orgf1967a0"></a>Arc<br />
+<li><a id="org382a06f"></a>RC a reference counted type enabling multiple ownership<br /></li>
+<li><a id="org89f844a"></a>Arc<br />
 <ol class="org-ol">
-<li><a id="org03e7e2b"></a><a href="https://doc.rust-lang.org/std/sync/struct.Arc.html">https://doc.rust-lang.org/std/sync/struct.Arc.html</a><br />
+<li><a id="org8b88dc4"></a><a href="https://doc.rust-lang.org/std/sync/struct.Arc.html">https://doc.rust-lang.org/std/sync/struct.Arc.html</a><br />
 <div class="outline-text-10" id="text-1-4-3-9-2-2-2-2-1">
 <p>
 The type Arc&lt;T&gt; provides shared ownership of a value of type T,
@@ -1324,7 +1327,7 @@ Mutex, RwLock, or one of the Atomic types.
 </li>
 </ol>
 </li>
-<li><a id="orgacc2b69"></a>Cell<br />
+<li><a id="org17ed028"></a>Cell<br />
 <div class="outline-text-9" id="text-1-4-3-9-2-2-2-3">
 <p>
 <a href="https://doc.rust-lang.org/stable/std/cell/index.html">https://doc.rust-lang.org/stable/std/cell/index.html</a>
@@ -1332,14 +1335,14 @@ Mutex, RwLock, or one of the Atomic types.
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="org8d301e3"></a>SafeCell<br />
+<li><a id="org2e98ffe"></a>SafeCell<br />
 <ol class="org-ol">
-<li><a id="org7e145ac"></a>RefCell<br /></li>
-<li><a id="org7c7f048"></a>Cell<br /></li>
+<li><a id="orgaef12bb"></a>RefCell<br /></li>
+<li><a id="orgdb5f5cb"></a>Cell<br /></li>
 </ol>
 </li>
 
-<li><a id="orgdeb48ae"></a>UnsafeCell<br /></li>
+<li><a id="org4d37c07"></a>UnsafeCell<br /></li>
 </ol>
 </li>
 </ol>
@@ -1351,7 +1354,7 @@ Mutex, RwLock, or one of the Atomic types.
 </ol>
 </li>
 
-<li><a id="orga258db2"></a>Raw string literals!<br />
+<li><a id="org7d40d0d"></a>Raw string literals!<br />
 <div class="outline-text-5" id="text-1-4-3-10">
 <p>
 <a href="https://rahul-thakoor.github.io/rust-raw-string-literals/">https://rahul-thakoor.github.io/rust-raw-string-literals/</a>
@@ -1359,7 +1362,7 @@ Mutex, RwLock, or one of the Atomic types.
 </div>
 </li>
 
-<li><a id="org5f1d28c"></a>Splitting Borrows<br />
+<li><a id="orga070f06"></a>Splitting Borrows<br />
 <div class="outline-text-5" id="text-1-4-3-11">
 <p>
 <a href="https://doc.rust-lang.org/nomicon/borrow-splitting.html">https://doc.rust-lang.org/nomicon/borrow-splitting.html</a>
@@ -1367,7 +1370,7 @@ Mutex, RwLock, or one of the Atomic types.
 </div>
 </li>
 
-<li><a id="org3af5b27"></a>Turbofish<br />
+<li><a id="org3046a7f"></a>Turbofish<br />
 <div class="outline-text-5" id="text-1-4-3-12">
 <p>
 <a href="https://techblog.tonsser.com/posts/what-is-rusts-turbofish">https://techblog.tonsser.com/posts/what-is-rusts-turbofish</a>
@@ -1375,7 +1378,7 @@ Mutex, RwLock, or one of the Atomic types.
 </div>
 </li>
 
-<li><a id="org3759948"></a>Myths Programmers Believe about CPU Caches<br />
+<li><a id="orgd4aad45"></a>Myths Programmers Believe about CPU Caches<br />
 <div class="outline-text-5" id="text-1-4-3-13">
 <p>
 <a href="https://software.rajivprab.com/2018/04/29/myths-programmers-believe-about-cpu-caches">https://software.rajivprab.com/2018/04/29/myths-programmers-believe-about-cpu-caches</a>
@@ -1386,18 +1389,18 @@ Mutex, RwLock, or one of the Atomic types.
 </ol>
 </div>
 </div>
-<div id="outline-container-orgc8e01ad" class="outline-3">
-<h3 id="orgc8e01ad"><span class="section-number-3">1.5</span> Vocab</h3>
+<div id="outline-container-orgeb3d31a" class="outline-3">
+<h3 id="orgeb3d31a"><span class="section-number-3">1.5</span> Vocab</h3>
 <div class="outline-text-3" id="text-1-5">
 </div>
-<div id="outline-container-org529fbdd" class="outline-4">
-<h4 id="org529fbdd"><span class="section-number-4">1.5.1</span> <a href="#org3af5b27">1.4.3.12</a></h4>
+<div id="outline-container-org56e19c3" class="outline-4">
+<h4 id="org56e19c3"><span class="section-number-4">1.5.1</span> <a href="#org3046a7f">1.4.3.12</a></h4>
 </div>
-<div id="outline-container-orgffe3497" class="outline-4">
-<h4 id="orgffe3497"><span class="section-number-4">1.5.2</span> <a href="#org5f1d28c">1.4.3.11</a></h4>
+<div id="outline-container-org8eea1d5" class="outline-4">
+<h4 id="org8eea1d5"><span class="section-number-4">1.5.2</span> <a href="#orga070f06">1.4.3.11</a></h4>
 </div>
-<div id="outline-container-orgdfd9546" class="outline-4">
-<h4 id="orgdfd9546"><span class="section-number-4">1.5.3</span> Deref Coercion</h4>
+<div id="outline-container-org93daef7" class="outline-4">
+<h4 id="org93daef7"><span class="section-number-4">1.5.3</span> Deref Coercion</h4>
 <div class="outline-text-4" id="text-1-5-3">
 <p>
 <a href="https://doc.rust-lang.org/book/ch15-02-deref.html">https://doc.rust-lang.org/book/ch15-02-deref.html</a>
@@ -1407,8 +1410,8 @@ Mutex, RwLock, or one of the Atomic types.
 </div>
 
 
-<div id="outline-container-org09343e2" class="outline-3">
-<h3 id="org09343e2"><span class="section-number-3">1.6</span> Rustonomicon - Iterating over mutable references to elements in a vector</h3>
+<div id="outline-container-org6ca9540" class="outline-3">
+<h3 id="org6ca9540"><span class="section-number-3">1.6</span> Rustonomicon - Iterating over mutable references to elements in a vector</h3>
 <div class="outline-text-3" id="text-1-6">
 <p>
 <a href="https://doc.rust-lang.org/stable/nomicon/vec.html">https://doc.rust-lang.org/stable/nomicon/vec.html</a>.
@@ -1426,12 +1429,12 @@ Listing 8-9: Iterating over mutable references to elements in a vector
 </div>
 </div>
 
-<div id="outline-container-org5c5808b" class="outline-3">
-<h3 id="org5c5808b"><span class="section-number-3">1.7</span> Chapter 10</h3>
+<div id="outline-container-org3901058" class="outline-3">
+<h3 id="org3901058"><span class="section-number-3">1.7</span> Chapter 10</h3>
 <div class="outline-text-3" id="text-1-7">
 </div>
-<div id="outline-container-org48d352c" class="outline-4">
-<h4 id="org48d352c"><span class="section-number-4">1.7.1</span> Blanket Implementations</h4>
+<div id="outline-container-org8654ea5" class="outline-4">
+<h4 id="org8654ea5"><span class="section-number-4">1.7.1</span> Blanket Implementations</h4>
 <div class="outline-text-4" id="text-1-7-1">
 <p>
 impl&lt;T: Display&gt; ToString for T {
@@ -1455,8 +1458,8 @@ class (Display a) =&gt; ToString a where
 </div>
 </div>
 
-<div id="outline-container-org4526f77" class="outline-3">
-<h3 id="org4526f77"><span class="section-number-3">1.8</span> TOOLS</h3>
+<div id="outline-container-orgbea1913" class="outline-3">
+<h3 id="orgbea1913"><span class="section-number-3">1.8</span> TOOLS</h3>
 <div class="outline-text-3" id="text-1-8">
 <p>
 running tests on code changes
@@ -1465,16 +1468,16 @@ running tests on code changes
 </div>
 </div>
 
-<div id="outline-container-org9d91d56" class="outline-3">
-<h3 id="org9d91d56"><span class="section-number-3">1.9</span> Questions</h3>
+<div id="outline-container-orgd4faa1c" class="outline-3">
+<h3 id="orgd4faa1c"><span class="section-number-3">1.9</span> Questions</h3>
 <div class="outline-text-3" id="text-1-9">
 </div>
-<div id="outline-container-org6c18cf1" class="outline-4">
-<h4 id="org6c18cf1"><span class="section-number-4">1.9.1</span> Chapter7</h4>
+<div id="outline-container-org514eade" class="outline-4">
+<h4 id="org514eade"><span class="section-number-4">1.9.1</span> Chapter7</h4>
 <div class="outline-text-4" id="text-1-9-1">
 </div>
 <ol class="org-ol">
-<li><a id="org1c42185"></a>What's the difference between packages and crates?<br />
+<li><a id="org1a1dfbb"></a>What's the difference between packages and crates?<br />
 <div class="outline-text-5" id="text-1-9-1-1">
 <p>
 A crate is a binary or library
@@ -1492,9 +1495,9 @@ crates.io is an unfortunate name, should be packages.io.
 </div>
 </li>
 
-<li><a id="org911ebff"></a>What's the deal with modules?<br />
+<li><a id="org7025bcc"></a>What's the deal with modules?<br />
 <ol class="org-ol">
-<li><a id="org2f36e0c"></a>How do I, #include "./point.h"<br />
+<li><a id="orgfde59c6"></a>How do I, #include "./point.h"<br />
 <div class="outline-text-6" id="text-1-9-1-2-1">
 <p>
 For programs with a main() function (i.e. not libraries)
@@ -1519,10 +1522,10 @@ fn main() {
 </ol>
 </li>
 
-<li><a id="org3fa147e"></a>Chapter14<br />
+<li><a id="orgeaa4132"></a>Chapter14<br />
 <ol class="org-ol">
-<li><a id="org58aa3ed"></a>What's a workspace?<br /></li>
-<li><a id="orgdf757bd"></a>mod is overloaded, it can mean<br />
+<li><a id="org1bbb820"></a>What's a workspace?<br /></li>
+<li><a id="orgcf57933"></a>mod is overloaded, it can mean<br />
 <div class="outline-text-6" id="text-1-9-1-3-2">
 <ul class="org-ul">
 <li>append a local module's path onto crate::</li>
@@ -1530,15 +1533,15 @@ fn main() {
 </ul>
 </div>
 </li>
-<li><a id="orgc2032d0"></a>files without mod keyword implictity declare module.<br /></li>
+<li><a id="org11a5bc7"></a>files without mod keyword implictity declare module.<br /></li>
 </ol>
 </li>
 </ol>
 </div>
 </div>
 
-<div id="outline-container-orgda87b0f" class="outline-3">
-<h3 id="orgda87b0f"><span class="section-number-3">1.10</span> Objective</h3>
+<div id="outline-container-orged6eb19" class="outline-3">
+<h3 id="orged6eb19"><span class="section-number-3">1.10</span> Objective</h3>
 <div class="outline-text-3" id="text-1-10">
 <p>
 Lifetimes, dangling references. This page is important for learning.
@@ -1552,8 +1555,8 @@ about profiling and when unsafe is the right way to go.
 </div>
 </div>
 
-<div id="outline-container-orge76fc29" class="outline-3">
-<h3 id="orge76fc29"><span class="section-number-3">1.11</span> PERFORMANCE</h3>
+<div id="outline-container-org5fdc417" class="outline-3">
+<h3 id="org5fdc417"><span class="section-number-3">1.11</span> PERFORMANCE</h3>
 <div class="outline-text-3" id="text-1-11">
 <p>
 let mut xs = Vec::with<sub>capacity</sub>(123); <i>/ note: goto def and see how it's implemented.
@@ -1565,8 +1568,8 @@ replaces malloc dance
 </div>
 
 
-<div id="outline-container-orgaf1f5f4" class="outline-3">
-<h3 id="orgaf1f5f4"><span class="section-number-3">1.12</span> Owned Types in structs.</h3>
+<div id="outline-container-org2ddd7eb" class="outline-3">
+<h3 id="org2ddd7eb"><span class="section-number-3">1.12</span> Owned Types in structs.</h3>
 <div class="outline-text-3" id="text-1-12">
 <p>
 <a href="https://doc.rust-lang.org/book/ch05-01-defining-structs.html#ownership-of-struct-data">https://doc.rust-lang.org/book/ch05-01-defining-structs.html#ownership-of-struct-data</a>
@@ -1580,8 +1583,8 @@ struct is valid."
 </div>
 
 
-<div id="outline-container-org7ebaf22" class="outline-3">
-<h3 id="org7ebaf22"><span class="section-number-3">1.13</span> Old topic ideas.</h3>
+<div id="outline-container-org97a5f9b" class="outline-3">
+<h3 id="org97a5f9b"><span class="section-number-3">1.13</span> Old topic ideas.</h3>
 <div class="outline-text-3" id="text-1-13">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1711,8 +1714,8 @@ highlight differences: IF statement or IF expression?
 </div>
 
 
-<div id="outline-container-org9cf2da5" class="outline-4">
-<h4 id="org9cf2da5"><span class="section-number-4">1.13.1</span> Ownership</h4>
+<div id="outline-container-org94bed46" class="outline-4">
+<h4 id="org94bed46"><span class="section-number-4">1.13.1</span> Ownership</h4>
 <div class="outline-text-4" id="text-1-13-1">
 <p>
 <a href="http://intorust.com/tutorial/ownership/">http://intorust.com/tutorial/ownership/</a>
@@ -1720,12 +1723,12 @@ highlight differences: IF statement or IF expression?
 </div>
 </div>
 
-<div id="outline-container-orgbeacaea" class="outline-4">
-<h4 id="orgbeacaea"><span class="section-number-4">1.13.2</span> Null</h4>
+<div id="outline-container-orgead65da" class="outline-4">
+<h4 id="orgead65da"><span class="section-number-4">1.13.2</span> Null</h4>
 <div class="outline-text-4" id="text-1-13-2">
 </div>
 <ol class="org-ol">
-<li><a id="org19c57ec"></a>problems with null.<br />
+<li><a id="org5953eb2"></a>problems with null.<br />
 <div class="outline-text-5" id="text-1-13-2-1">
 <p>
 <a href="http://wiki.c2.com/?WhatIsNull">http://wiki.c2.com/?WhatIsNull</a>
@@ -1733,24 +1736,24 @@ highlight differences: IF statement or IF expression?
 </p>
 </div>
 </li>
-<li><a id="orgb8d2641"></a>rust doesn't allow them<br /></li>
+<li><a id="orge40a256"></a>rust doesn't allow them<br /></li>
 </ol>
 </div>
 </div>
 
-<div id="outline-container-org9460b46" class="outline-3">
-<h3 id="org9460b46"><span class="section-number-3">1.14</span> Practical Stuff</h3>
+<div id="outline-container-org20b7269" class="outline-3">
+<h3 id="org20b7269"><span class="section-number-3">1.14</span> Practical Stuff</h3>
 <div class="outline-text-3" id="text-1-14">
 </div>
-<div id="outline-container-orgbf37451" class="outline-4">
-<h4 id="orgbf37451"><span class="section-number-4">1.14.1</span> Setting up Editor</h4>
+<div id="outline-container-org7042954" class="outline-4">
+<h4 id="org7042954"><span class="section-number-4">1.14.1</span> Setting up Editor</h4>
 <div class="outline-text-4" id="text-1-14-1">
 <p>
 <a href="https://areweideyet.com">https://areweideyet.com</a>
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="org553e83f"></a>Rust Language Server<br />
+<li><a id="orge531f8c"></a>Rust Language Server<br />
 <div class="outline-text-5" id="text-1-14-1-1">
 <p>
 <a href="https://www.mortens.dev/blog/emacs-and-the-language-server-protocol/">https://www.mortens.dev/blog/emacs-and-the-language-server-protocol/</a>
@@ -1760,12 +1763,12 @@ highlight differences: IF statement or IF expression?
 </ol>
 </div>
 
-<div id="outline-container-orge9d4bfc" class="outline-4">
-<h4 id="orge9d4bfc"><span class="section-number-4">1.14.2</span> Editor Considerations</h4>
+<div id="outline-container-org652f5fa" class="outline-4">
+<h4 id="org652f5fa"><span class="section-number-4">1.14.2</span> Editor Considerations</h4>
 <div class="outline-text-4" id="text-1-14-2">
 </div>
 <ol class="org-ol">
-<li><a id="org96f8492"></a>Editing rustdoc comments in emacs<br />
+<li><a id="org22e91a7"></a>Editing rustdoc comments in emacs<br />
 <div class="outline-text-5" id="text-1-14-2-1">
 <p>
 <a href="https://boinkor.net/2018/10/editing-rustdoc-comments-in-emacs/">https://boinkor.net/2018/10/editing-rustdoc-comments-in-emacs/</a>
@@ -1773,7 +1776,7 @@ highlight differences: IF statement or IF expression?
 </div>
 </li>
 
-<li><a id="org3fa769c"></a>Editor editions<br />
+<li><a id="org0380312"></a>Editor editions<br />
 <div class="outline-text-5" id="text-1-14-2-2">
 <p>
 It couldn't be taught in emacs, that's for sure.  An editor with
@@ -1787,7 +1790,7 @@ Rust
 </div>
 </li>
 
-<li><a id="orga8d162c"></a>It's critical that the editor support works<br />
+<li><a id="org1b7e480"></a>It's critical that the editor support works<br />
 <div class="outline-text-5" id="text-1-14-2-3">
 <ul class="org-ul">
 <li>find definition is necessary to see how things work.
@@ -1796,7 +1799,7 @@ convenient references when learning else no learning.</li>
 </div>
 </li>
 
-<li><a id="org132f880"></a>Debugging<br />
+<li><a id="orgea23eb3"></a>Debugging<br />
 <div class="outline-text-5" id="text-1-14-2-4">
 <p>
 <a href="https://smallcultfollowing.com/babysteps/blog/2018/09/21/office-hours-0-debugging-with-gdb/">https://smallcultfollowing.com/babysteps/blog/2018/09/21/office-hours-0-debugging-with-gdb/</a>
@@ -1815,12 +1818,12 @@ same execution is replayed every time."
 </div>
 </div>
 
-<div id="outline-container-org83eccb4" class="outline-3">
-<h3 id="org83eccb4"><span class="section-number-3">1.15</span> ONLINE RUST COURSE BLUEPRINT</h3>
+<div id="outline-container-orgee6dcc8" class="outline-3">
+<h3 id="orgee6dcc8"><span class="section-number-3">1.15</span> ONLINE RUST COURSE BLUEPRINT</h3>
 <div class="outline-text-3" id="text-1-15">
 </div>
-<div id="outline-container-org47d2359" class="outline-4">
-<h4 id="org47d2359"><span class="section-number-4">1.15.1</span> Facets of Ownership</h4>
+<div id="outline-container-orga6fddf7" class="outline-4">
+<h4 id="orga6fddf7"><span class="section-number-4">1.15.1</span> Facets of Ownership</h4>
 <div class="outline-text-4" id="text-1-15-1">
 <p>
 Explicate mechanics. What is rust doing automatically?  Using move
@@ -1831,8 +1834,8 @@ rust. Then Resugar it.
 </div>
 </div>
 
-<div id="outline-container-org55ba78d" class="outline-4">
-<h4 id="org55ba78d"><span class="section-number-4">1.15.2</span> Languages</h4>
+<div id="outline-container-org40e0474" class="outline-4">
+<h4 id="org40e0474"><span class="section-number-4">1.15.2</span> Languages</h4>
 <div class="outline-text-4" id="text-1-15-2">
 <p>
 <a href="http://lambda-the-ultimate.org/node/4389">http://lambda-the-ultimate.org/node/4389</a>
@@ -1840,12 +1843,12 @@ rust. Then Resugar it.
 </div>
 </div>
 
-<div id="outline-container-org4860fc9" class="outline-4">
-<h4 id="org4860fc9"><span class="section-number-4">1.15.3</span> Copy</h4>
+<div id="outline-container-orga1db661" class="outline-4">
+<h4 id="orga1db661"><span class="section-number-4">1.15.3</span> Copy</h4>
 <div class="outline-text-4" id="text-1-15-3">
 </div>
 <ol class="org-ol">
-<li><a id="org68606da"></a>Shallow Copy<br />
+<li><a id="org6d90e84"></a>Shallow Copy<br />
 <div class="outline-text-5" id="text-1-15-3-1">
 <p>
 Copy, does a shallow copy of the stack data, but maintains pointers to
@@ -1854,23 +1857,23 @@ Types with Drop trait implemented can't implement Copy.
 </p>
 </div>
 </li>
-<li><a id="orge2e947c"></a>Clone (python's deep<sub>copy</sub>)<br /></li>
+<li><a id="org2189886"></a>Clone (python's deep<sub>copy</sub>)<br /></li>
 </ol>
 </div>
 
-<div id="outline-container-org5b9c494" class="outline-4">
-<h4 id="org5b9c494"><span class="section-number-4">1.15.4</span> A rust implementation of the lambda-calculus?</h4>
+<div id="outline-container-orgd992fb0" class="outline-4">
+<h4 id="orgd992fb0"><span class="section-number-4">1.15.4</span> A rust implementation of the lambda-calculus?</h4>
 </div>
 
-<div id="outline-container-orgc503825" class="outline-4">
-<h4 id="orgc503825"><span class="section-number-4">1.15.5</span> Scopes are owners.</h4>
+<div id="outline-container-org71aa0ff" class="outline-4">
+<h4 id="org71aa0ff"><span class="section-number-4">1.15.5</span> Scopes are owners.</h4>
 </div>
-<div id="outline-container-org6cf70da" class="outline-4">
-<h4 id="org6cf70da"><span class="section-number-4">1.15.6</span> Methodology</h4>
+<div id="outline-container-org2fbb3ff" class="outline-4">
+<h4 id="org2fbb3ff"><span class="section-number-4">1.15.6</span> Methodology</h4>
 <div class="outline-text-4" id="text-1-15-6">
 </div>
 <ol class="org-ol">
-<li><a id="orgd43c70b"></a>motivate by introducing project. A gem to behold.<br />
+<li><a id="orgde15b5c"></a>motivate by introducing project. A gem to behold.<br />
 <div class="outline-text-5" id="text-1-15-6-1">
 <p>
 The gem principle of course
@@ -1909,8 +1912,8 @@ Omni projects, a ~1 KLOC project.
 </div>
 
 
-<div id="outline-container-org8087668" class="outline-4">
-<h4 id="org8087668"><span class="section-number-4">1.15.7</span> RUST-O-RAMA bonanza.</h4>
+<div id="outline-container-org17c92b0" class="outline-4">
+<h4 id="org17c92b0"><span class="section-number-4">1.15.7</span> RUST-O-RAMA bonanza.</h4>
 <div class="outline-text-4" id="text-1-15-7">
 <p>
 own-o-rama part1
@@ -1920,8 +1923,8 @@ closur-ama part1
 </p>
 </div>
 </div>
-<div id="outline-container-org3527215" class="outline-4">
-<h4 id="org3527215"><span class="section-number-4">1.15.8</span> What is the global allocator?</h4>
+<div id="outline-container-org4da7752" class="outline-4">
+<h4 id="org4da7752"><span class="section-number-4">1.15.8</span> What is the global allocator?</h4>
 <div class="outline-text-4" id="text-1-15-8">
 <p>
 <a href="https://doc.rust-lang.org/edition-guide/rust-2018/platform-and-target-support/global-allocators.html">https://doc.rust-lang.org/edition-guide/rust-2018/platform-and-target-support/global-allocators.html</a>
@@ -1931,8 +1934,8 @@ Divergent functions.
 </div>
 
 
-<div id="outline-container-orgc0e1b01" class="outline-4">
-<h4 id="orgc0e1b01"><span class="section-number-4">1.15.9</span> How to train a new Rust member?</h4>
+<div id="outline-container-org799b7df" class="outline-4">
+<h4 id="org799b7df"><span class="section-number-4">1.15.9</span> How to train a new Rust member?</h4>
 <div class="outline-text-4" id="text-1-15-9">
 <p>
 <a href="https://www.reddit.com/r/rust/comments/cx90ib/how_to_train_a_new_rust_member/">https://www.reddit.com/r/rust/comments/cx90ib/how_to_train_a_new_rust_member/</a>
@@ -1940,7 +1943,7 @@ Divergent functions.
 </div>
 
 <ol class="org-ol">
-<li><a id="org03a6986"></a>notice<br />
+<li><a id="orgdc5e39a"></a>notice<br />
 <div class="outline-text-5" id="text-1-15-9-1">
 <ul class="org-ul">
 <li>name shadowing
@@ -1951,8 +1954,8 @@ reuse names when returning ownership.</li>
 </ol>
 </div>
 
-<div id="outline-container-org9653b75" class="outline-4">
-<h4 id="org9653b75"><span class="section-number-4">1.15.10</span> Lifetime Specifier</h4>
+<div id="outline-container-org99d05e4" class="outline-4">
+<h4 id="org99d05e4"><span class="section-number-4">1.15.10</span> Lifetime Specifier</h4>
 <div class="outline-text-4" id="text-1-15-10">
 <p>
 Rust Tutorial - Lifetime Specifiers Explained
@@ -1961,8 +1964,8 @@ Rust Tutorial - Lifetime Specifiers Explained
 </div>
 </div>
 
-<div id="outline-container-org8dc97c8" class="outline-4">
-<h4 id="org8dc97c8"><span class="section-number-4">1.15.11</span> existing rust courses</h4>
+<div id="outline-container-org4ce13ea" class="outline-4">
+<h4 id="org4ce13ea"><span class="section-number-4">1.15.11</span> existing rust courses</h4>
 <div class="outline-text-4" id="text-1-15-11">
 <p>
 <a href="http://cs242.stanford.edu/f18/">http://cs242.stanford.edu/f18/</a>
@@ -1971,12 +1974,12 @@ Rust Tutorial - Lifetime Specifiers Explained
 </p>
 </div>
 </div>
-<div id="outline-container-org384d420" class="outline-4">
-<h4 id="org384d420"><span class="section-number-4">1.15.12</span> Links</h4>
+<div id="outline-container-org3c9654c" class="outline-4">
+<h4 id="org3c9654c"><span class="section-number-4">1.15.12</span> Links</h4>
 <div class="outline-text-4" id="text-1-15-12">
 </div>
 <ol class="org-ol">
-<li><a id="orgca866a6"></a>discussion<br />
+<li><a id="org9bb5eee"></a>discussion<br />
 <div class="outline-text-5" id="text-1-15-12-1">
 <p>
 <a href="https://news.ycombinator.com/item?id=13265758">https://news.ycombinator.com/item?id=13265758</a>
@@ -1986,23 +1989,23 @@ Rust Tutorial - Lifetime Specifiers Explained
 </li>
 </ol>
 </div>
-<div id="outline-container-orga8b0b6e" class="outline-4">
-<h4 id="orga8b0b6e"><span class="section-number-4">1.15.13</span> Builder Pattern mitigates verbose constructors of large structs</h4>
+<div id="outline-container-orgeefb7ba" class="outline-4">
+<h4 id="orgeefb7ba"><span class="section-number-4">1.15.13</span> Builder Pattern mitigates verbose constructors of large structs</h4>
 <div class="outline-text-4" id="text-1-15-13">
 <p>
 <a href="https://doc.rust-lang.org/1.0.0/style/ownership/builders.html">https://doc.rust-lang.org/1.0.0/style/ownership/builders.html</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgc047ca0" class="outline-4">
-<h4 id="orgc047ca0"><span class="section-number-4">1.15.14</span> What's the diff?</h4>
+<div id="outline-container-orgbbe53a2" class="outline-4">
+<h4 id="orgbbe53a2"><span class="section-number-4">1.15.14</span> What's the diff?</h4>
 <div class="outline-text-4" id="text-1-15-14">
 <p>
 <a href="https://www.apriorit.com/dev-blog/520-rust-vs-c-comparison">https://www.apriorit.com/dev-blog/520-rust-vs-c-comparison</a>
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="orgbfad7cc"></a>Topics<br />
+<li><a id="orge05fb59"></a>Topics<br />
 <div class="outline-text-5" id="text-1-15-14-1">
 <p>
 Zero cost abstractions
@@ -2019,8 +2022,8 @@ FFI
 </ol>
 </div>
 
-<div id="outline-container-org55d70ab" class="outline-4">
-<h4 id="org55d70ab"><span class="section-number-4">1.15.15</span> Philosophy</h4>
+<div id="outline-container-org0cb22cf" class="outline-4">
+<h4 id="org0cb22cf"><span class="section-number-4">1.15.15</span> Philosophy</h4>
 <div class="outline-text-4" id="text-1-15-15">
 <p>
 Take the most learningest of learning moments one would find while
@@ -2054,8 +2057,8 @@ Lecture
 </p>
 </div>
 </div>
-<div id="outline-container-org6fb3368" class="outline-4">
-<h4 id="org6fb3368"><span class="section-number-4">1.15.16</span> Operational semantics, shortcut notation useful to speed understanding?</h4>
+<div id="outline-container-org4962a7c" class="outline-4">
+<h4 id="org4962a7c"><span class="section-number-4">1.15.16</span> Operational semantics, shortcut notation useful to speed understanding?</h4>
 <div class="outline-text-4" id="text-1-15-16">
 <p>
 this is good, understand this
@@ -2064,15 +2067,15 @@ this is good, understand this
 </p>
 </div>
 </div>
-<div id="outline-container-orgf24831a" class="outline-4">
-<h4 id="orgf24831a"><span class="section-number-4">1.15.17</span> Closures</h4>
+<div id="outline-container-org1c86d60" class="outline-4">
+<h4 id="org1c86d60"><span class="section-number-4">1.15.17</span> Closures</h4>
 <div class="outline-text-4" id="text-1-15-17">
 <p>
 with pictures.
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="orge6c50a9"></a>Closure has two things:<br />
+<li><a id="org6919a3d"></a>Closure has two things:<br />
 <div class="outline-text-5" id="text-1-15-17-1">
 <ul class="org-ul">
 <li>captures, the variables in the scope outside of the function</li>
@@ -2081,7 +2084,7 @@ with pictures.
 </div>
 </li>
 
-<li><a id="org9ddf846"></a>sources<br />
+<li><a id="org87d54bc"></a>sources<br />
 <div class="outline-text-5" id="text-1-15-17-2">
 <p>
 <a href="https://medium.com/swlh/understanding-closures-in-rust-21f286ed1759">https://medium.com/swlh/understanding-closures-in-rust-21f286ed1759</a>
@@ -2093,20 +2096,20 @@ with pictures.
 </div>
 </div>
 
-<div id="outline-container-orgbf8f278" class="outline-3">
-<h3 id="orgbf8f278"><span class="section-number-3">1.16</span> Lecture10</h3>
+<div id="outline-container-org532b14b" class="outline-3">
+<h3 id="org532b14b"><span class="section-number-3">1.16</span> Lecture10</h3>
 <div class="outline-text-3" id="text-1-16">
 </div>
-<div id="outline-container-org9fe83fe" class="outline-4">
-<h4 id="org9fe83fe"><span class="section-number-4">1.16.1</span> What's a trait?</h4>
+<div id="outline-container-orgfbc33a1" class="outline-4">
+<h4 id="orgfbc33a1"><span class="section-number-4">1.16.1</span> What's a trait?</h4>
 <div class="outline-text-4" id="text-1-16-1">
 <p>
 It's like an interface.
 </p>
 </div>
 </div>
-<div id="outline-container-orgbc4697c" class="outline-4">
-<h4 id="orgbc4697c"><span class="section-number-4">1.16.2</span> What's an interface?</h4>
+<div id="outline-container-org93b7e8f" class="outline-4">
+<h4 id="org93b7e8f"><span class="section-number-4">1.16.2</span> What's an interface?</h4>
 <div class="outline-text-4" id="text-1-16-2">
 <p>
 <a href="https://www.callicoder.com/golang-interfaces/">https://www.callicoder.com/golang-interfaces/</a> 
@@ -2130,12 +2133,12 @@ Haskell type class
 </div>
 </div>
 
-<div id="outline-container-orgf51bd0a" class="outline-3">
-<h3 id="orgf51bd0a"><span class="section-number-3">1.17</span> Lecture Heap, aliasing, ownership and borrowing???</h3>
+<div id="outline-container-org0ce92c0" class="outline-3">
+<h3 id="org0ce92c0"><span class="section-number-3">1.17</span> Lecture Heap, aliasing, ownership and borrowing???</h3>
 <div class="outline-text-3" id="text-1-17">
 </div>
-<div id="outline-container-org33a64ab" class="outline-4">
-<h4 id="org33a64ab"><span class="section-number-4">1.17.1</span> unvetted links</h4>
+<div id="outline-container-org6280a85" class="outline-4">
+<h4 id="org6280a85"><span class="section-number-4">1.17.1</span> unvetted links</h4>
 <div class="outline-text-4" id="text-1-17-1">
 <p>
 <a href="https://github.com/mre/idiomatic-rust">https://github.com/mre/idiomatic-rust</a>
@@ -2143,33 +2146,33 @@ Haskell type class
 </div>
 </div>
 
-<div id="outline-container-orgf43836d" class="outline-4">
-<h4 id="orgf43836d"><span class="section-number-4">1.17.2</span> Objective</h4>
+<div id="outline-container-org8c4b0f2" class="outline-4">
+<h4 id="org8c4b0f2"><span class="section-number-4">1.17.2</span> Objective</h4>
 <div class="outline-text-4" id="text-1-17-2">
 </div>
 <ol class="org-ol">
-<li><a id="org0780d0d"></a>after this lecture you should:<br />
+<li><a id="orgc0a5666"></a>after this lecture you should:<br />
 <div class="outline-text-5" id="text-1-17-2-1">
 <ul class="org-ul">
 <li>have a solid grasp of allocators and how their interface allows usage.</li>
 <li>understand the heap, issues of aliasing, ownership and borrowing.</li>
 <li>be able to port some basic imperative idioms to rust</li>
-<li>be able to decode rust error messages regarding ownership.</li>
+<li>be able to decode rustc error messages regarding ownership.</li>
 </ul>
 </div>
 </li>
 
-<li><a id="orge3a6f73"></a>Common Errors<br /></li>
+<li><a id="org1541f3e"></a>Common Errors<br /></li>
 </ol>
 </div>
 </div>
 
-<div id="outline-container-org501cacb" class="outline-3">
-<h3 id="org501cacb"><span class="section-number-3">1.18</span> Possible Omni Project</h3>
+<div id="outline-container-orgdb9a6b7" class="outline-3">
+<h3 id="orgdb9a6b7"><span class="section-number-3">1.18</span> Possible Omni Project</h3>
 <div class="outline-text-3" id="text-1-18">
 </div>
-<div id="outline-container-org50e39d0" class="outline-4">
-<h4 id="org50e39d0"><span class="section-number-4">1.18.1</span> Efficient mini scheme interpreter</h4>
+<div id="outline-container-org919b4a8" class="outline-4">
+<h4 id="org919b4a8"><span class="section-number-4">1.18.1</span> Efficient mini scheme interpreter</h4>
 <div class="outline-text-4" id="text-1-18-1">
 <p>
 Garbage Collector?
@@ -2178,15 +2181,15 @@ Challenges
 </div>
 </div>
 
-<div id="outline-container-org6c45307" class="outline-4">
-<h4 id="org6c45307"><span class="section-number-4">1.18.2</span> Network</h4>
+<div id="outline-container-org49f52a2" class="outline-4">
+<h4 id="org49f52a2"><span class="section-number-4">1.18.2</span> Network</h4>
 <div class="outline-text-4" id="text-1-18-2">
 <p>
 <a href="https://medium.com/coinmonks/understanding-ipfs-in-depth-5-6-what-is-libp2p-f8bf7724d452">https://medium.com/coinmonks/understanding-ipfs-in-depth-5-6-what-is-libp2p-f8bf7724d452</a>
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="orgfd7127e"></a>Practical Networked Applications in Rust<br />
+<li><a id="orged15c46"></a>Practical Networked Applications in Rust<br />
 <div class="outline-text-5" id="text-1-18-2-1">
 <p>
 <a href="https://github.com/pingcap/talent-plan/blob/master/rust/README.md">https://github.com/pingcap/talent-plan/blob/master/rust/README.md</a>
@@ -2194,24 +2197,24 @@ Challenges
 </div>
 </li>
 
-<li><a id="org192f8f1"></a>Enforcing protocol invarients with the borrow checker?<br /></li>
+<li><a id="orgf152b34"></a>Enforcing protocol invarients with the borrow checker?<br /></li>
 </ol>
 </div>
 
-<div id="outline-container-orgf48b153" class="outline-4">
-<h4 id="orgf48b153"><span class="section-number-4">1.18.3</span> Emulator</h4>
+<div id="outline-container-orgd6c4dfd" class="outline-4">
+<h4 id="orgd6c4dfd"><span class="section-number-4">1.18.3</span> Emulator</h4>
 <div class="outline-text-4" id="text-1-18-3">
 <p>
 Port a (C++ or C) (Beta or RiscV) cpu emulator to Rust.
 </p>
 
-<p>
-Lab1 Control Structure Upgrades. 
-Lab2 Debugging Rust
-Lab3 Instruction set, Tests!
-Lab4 Add a Mul instruction and profile it.
-Lab5 Run linux on the emulator.
-</p>
+<ul class="org-ul">
+<li>Lab1 Control Structure Upgrades.</li>
+<li>Lab2 Debugging Rust</li>
+<li>Lab3 Instruction set, Tests!</li>
+<li>Lab4 Add a Mul instruction and profile it.</li>
+<li>Lab5 Run linux on the emulator.</li>
+</ul>
 </div>
 </div>
 </div>
@@ -2219,24 +2222,24 @@ Lab5 Run linux on the emulator.
 
 
 
-<div id="outline-container-orgf3f69f1" class="outline-3">
-<h3 id="orgf3f69f1"><span class="section-number-3">1.19</span> Out of scope neat stuff!</h3>
+<div id="outline-container-org0c0c0c3" class="outline-3">
+<h3 id="org0c0c0c3"><span class="section-number-3">1.19</span> Out of scope neat stuff!</h3>
 <div class="outline-text-3" id="text-1-19">
 <p>
 <a href="https://github.com/RustPython/RustPython">https://github.com/RustPython/RustPython</a>
 </p>
 </div>
-<div id="outline-container-org959642d" class="outline-4">
-<h4 id="org959642d"><span class="section-number-4">1.19.1</span> Deep dives</h4>
+<div id="outline-container-org6867f2d" class="outline-4">
+<h4 id="org6867f2d"><span class="section-number-4">1.19.1</span> Deep dives</h4>
 <div class="outline-text-4" id="text-1-19-1">
 <p>
 <a href="https://smallcultfollowing.com/babysteps/">https://smallcultfollowing.com/babysteps/</a>
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="org6e34be8"></a>THEORY AND PAPERS<br />
+<li><a id="orgd4f0bc0"></a>THEORY AND PAPERS<br />
 <ol class="org-ol">
-<li><a id="org4f31c56"></a>Non-lexical lifetimes: introduction (4/27/2016)<br />
+<li><a id="org41a6476"></a>Non-lexical lifetimes: introduction (4/27/2016)<br />
 <div class="outline-text-6" id="text-1-19-1-1-1">
 <p>
 <a href="https://smallcultfollowing.com/babysteps/blog/2016/04/27/non-lexical-lifetimes-introduction/">https://smallcultfollowing.com/babysteps/blog/2016/04/27/non-lexical-lifetimes-introduction/</a>
@@ -2244,7 +2247,7 @@ Lab5 Run linux on the emulator.
 </div>
 </li>
 
-<li><a id="orgf534ccf"></a>Oxide: The Essence of Rust<br />
+<li><a id="org44270dc"></a>Oxide: The Essence of Rust<br />
 <div class="outline-text-6" id="text-1-19-1-1-2">
 <p>
 <a href="https://arxiv.org/pdf/1903.00982.pdf">https://arxiv.org/pdf/1903.00982.pdf</a>
@@ -2253,7 +2256,7 @@ Places, provenances, types, kinds, shapes
 </div>
 
 <ol class="org-ol">
-<li><a id="org850a93a"></a>references<br />
+<li><a id="org22a2a1a"></a>references<br />
 <div class="outline-text-7" id="text-1-19-1-1-2-1">
 <p>
 Ownership Types For Flexible Alias Protection
@@ -2262,16 +2265,16 @@ Ownership Types For Flexible Alias Protection
 </div>
 </li>
 
-<li><a id="orgf8de5b5"></a>Kinds<br />
+<li><a id="org4b982e2"></a>Kinds<br />
 <ol class="org-ol">
-<li><a id="orgf11fba2"></a>Ordinary Types<br /></li>
-<li><a id="orgadc0aab"></a>Provenance<br /></li>
+<li><a id="orge2923b4"></a>Ordinary Types<br /></li>
+<li><a id="orge48b630"></a>Provenance<br /></li>
 </ol>
 </li>
 </ol>
 </li>
 
-<li><a id="org6a080b8"></a>Ownership Types For Flexible Alias Protection<br />
+<li><a id="org180fc1e"></a>Ownership Types For Flexible Alias Protection<br />
 <div class="outline-text-6" id="text-1-19-1-1-3">
 <p>
 (a rust precursor)
@@ -2279,7 +2282,7 @@ Ownership Types For Flexible Alias Protection
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="orgda8f533"></a>glossary<br />
+<li><a id="org05792b4"></a>glossary<br />
 <div class="outline-text-7" id="text-1-19-1-1-3-1">
 <ul class="org-ul">
 <li>CONTEXT = When a new object is created, it is alloted a new context
@@ -2304,7 +2307,7 @@ containment based on articulation points</li>
 </div>
 </li>
 
-<li><a id="org3e147f6"></a>representation containment<br /></li>
+<li><a id="orgca50ac9"></a>representation containment<br /></li>
 </ol>
 </li>
 </ol>
@@ -2314,8 +2317,8 @@ containment based on articulation points</li>
 
 
 
-<div id="outline-container-orgca94391" class="outline-4">
-<h4 id="orgca94391"><span class="section-number-4">1.19.2</span> Hardware</h4>
+<div id="outline-container-orge5a8a34" class="outline-4">
+<h4 id="orge5a8a34"><span class="section-number-4">1.19.2</span> Hardware</h4>
 <div class="outline-text-4" id="text-1-19-2">
 <p>
 Using Type-Level Programming in Rust to Make Safer Hardware Abstractions
@@ -2323,8 +2326,8 @@ Using Type-Level Programming in Rust to Make Safer Hardware Abstractions
 </p>
 </div>
 </div>
-<div id="outline-container-org116597f" class="outline-4">
-<h4 id="org116597f"><span class="section-number-4">1.19.3</span> Rust on microcontrollers</h4>
+<div id="outline-container-org4539788" class="outline-4">
+<h4 id="org4539788"><span class="section-number-4">1.19.3</span> Rust on microcontrollers</h4>
 <div class="outline-text-4" id="text-1-19-3">
 <p>
 <a href="https://droogmic.github.io/microrust/">https://droogmic.github.io/microrust/</a>
@@ -2332,8 +2335,8 @@ Using Type-Level Programming in Rust to Make Safer Hardware Abstractions
 </div>
 </div>
 
-<div id="outline-container-org0460572" class="outline-4">
-<h4 id="org0460572"><span class="section-number-4">1.19.4</span> C2Rust compiler</h4>
+<div id="outline-container-orge168373" class="outline-4">
+<h4 id="orge168373"><span class="section-number-4">1.19.4</span> C2Rust compiler</h4>
 <div class="outline-text-4" id="text-1-19-4">
 <p>
 <a href="https://c2rust.com">https://c2rust.com</a>
@@ -2341,20 +2344,20 @@ Using Type-Level Programming in Rust to Make Safer Hardware Abstractions
 </div>
 </div>
 
-<div id="outline-container-org6fb9dfc" class="outline-4">
-<h4 id="org6fb9dfc"><span class="section-number-4">1.19.5</span> Helping the cause</h4>
+<div id="outline-container-org716baa4" class="outline-4">
+<h4 id="org716baa4"><span class="section-number-4">1.19.5</span> Helping the cause</h4>
 <div class="outline-text-4" id="text-1-19-5">
 <p>
 implement for loop names in racer?
 </p>
 </div>
 </div>
-<div id="outline-container-org2d86cb4" class="outline-4">
-<h4 id="org2d86cb4"><span class="section-number-4">1.19.6</span> NEW IDEAS?</h4>
+<div id="outline-container-orgb7c0cdb" class="outline-4">
+<h4 id="orgb7c0cdb"><span class="section-number-4">1.19.6</span> NEW IDEAS?</h4>
 <div class="outline-text-4" id="text-1-19-6">
 </div>
 <ol class="org-ol">
-<li><a id="orgfe3bb9a"></a>Restricted aliases<br />
+<li><a id="orgef631ef"></a>Restricted aliases<br />
 <div class="outline-text-5" id="text-1-19-6-1">
 <p>
 Restrict the graph distance of an aliased item. So, an object may
@@ -2366,8 +2369,8 @@ has a field with type *C ?
 </ol>
 </div>
 
-<div id="outline-container-org0da5d53" class="outline-4">
-<h4 id="org0da5d53"><span class="section-number-4">1.19.7</span> Scheme Segque</h4>
+<div id="outline-container-org3f2b3f9" class="outline-4">
+<h4 id="org3f2b3f9"><span class="section-number-4">1.19.7</span> Scheme Segque</h4>
 <div class="outline-text-4" id="text-1-19-7">
 <p>
 Implement lifetime observers in the basic scheme interpreter.
@@ -2378,8 +2381,8 @@ etc.
 </div>
 </div>
 
-<div id="outline-container-orgc86d1a8" class="outline-4">
-<h4 id="orgc86d1a8"><span class="section-number-4">1.19.8</span> TOOLS</h4>
+<div id="outline-container-orged91b74" class="outline-4">
+<h4 id="orged91b74"><span class="section-number-4">1.19.8</span> TOOLS</h4>
 <div class="outline-text-4" id="text-1-19-8">
 <p>
 Pick an editor with good rust support. If you hit a snag then open an
@@ -2395,66 +2398,86 @@ Get the your editor working.
 </div>
 
 
-<div id="outline-container-org8cbb995" class="outline-2">
-<h2 id="org8cbb995"><span class="section-number-2">2</span> UNSORTED</h2>
+<div id="outline-container-orga2ffedc" class="outline-2">
+<h2 id="orga2ffedc"><span class="section-number-2">2</span> UNSORTED</h2>
 <div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org8904706" class="outline-3">
+<h3 id="org8904706"><span class="section-number-3">2.1</span> Rust Battle!</h3>
+<div class="outline-text-3" id="text-2-1">
 <p>
-<a href="https://blog.systems.ethz.ch/blog/2018/a-hammer-you-can-only-hold-by-the-handle.html">https://blog.systems.ethz.ch/blog/2018/a-hammer-you-can-only-hold-by-the-handle.html</a>
-</p>
-
-<p>
-unimplemented!() is a time saver.
+<a href="https://rustbattle.net/battle">https://rustbattle.net/battle</a>
 </p>
 </div>
+</div>
 
-<div id="outline-container-orgee88cca" class="outline-3">
-<h3 id="orgee88cca"><span class="section-number-3">2.1</span> Chunking Optimizations: Let the Knife Do the Work (AVX-512)</h3>
-<div class="outline-text-3" id="text-2-1">
+<div id="outline-container-org898a993" class="outline-3">
+<h3 id="org898a993"><span class="section-number-3">2.2</span> Arti&amp;cle?</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+<a href="https://blog.systems.ethz.ch/blog/2018/a-hammer-you-can-only-hold-by-the-handle.html">https://blog.systems.ethz.ch/blog/2018/a-hammer-you-can-only-hold-by-the-handle.html</a>
+todo!() is a time saver.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7b61058" class="outline-3">
+<h3 id="org7b61058"><span class="section-number-3">2.3</span> Interior mutability patterns</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+<a href="https://pitdicker.github.io/Interior-mutability-patterns/">https://pitdicker.github.io/Interior-mutability-patterns/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2f9cb51" class="outline-3">
+<h3 id="org2f9cb51"><span class="section-number-3">2.4</span> Chunking Optimizations: Let the Knife Do the Work (AVX-512)</h3>
+<div class="outline-text-3" id="text-2-4">
 <p>
 <a href="https://nullprogram.com/blog/2019/12/09/">https://nullprogram.com/blog/2019/12/09/</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgb3f5f92" class="outline-3">
-<h3 id="orgb3f5f92"><span class="section-number-3">2.2</span> What's up with Cargo.lock?</h3>
-<div class="outline-text-3" id="text-2-2">
+<div id="outline-container-org290f773" class="outline-3">
+<h3 id="org290f773"><span class="section-number-3">2.5</span> What's up with Cargo.lock?</h3>
+<div class="outline-text-3" id="text-2-5">
 <p>
 <a href="https://doc.rust-lang.org/cargo/guide/cargo-toml-vs-cargo-lock.html">https://doc.rust-lang.org/cargo/guide/cargo-toml-vs-cargo-lock.html</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-org94f4933" class="outline-3">
-<h3 id="org94f4933"><span class="section-number-3">2.3</span> What's up with build scripts?</h3>
-<div class="outline-text-3" id="text-2-3">
+<div id="outline-container-orgdbd6086" class="outline-3">
+<h3 id="orgdbd6086"><span class="section-number-3">2.6</span> What's up with build scripts?</h3>
+<div class="outline-text-3" id="text-2-6">
 <p>
 <a href="https://doc.rust-lang.org/cargo/reference/build-scripts.html">https://doc.rust-lang.org/cargo/reference/build-scripts.html</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-org82bfaf5" class="outline-3">
-<h3 id="org82bfaf5"><span class="section-number-3">2.4</span> Rust Guides</h3>
-<div class="outline-text-3" id="text-2-4">
+<div id="outline-container-orgfbb5e8c" class="outline-3">
+<h3 id="orgfbb5e8c"><span class="section-number-3">2.7</span> Rust Guides</h3>
+<div class="outline-text-3" id="text-2-7">
 <p>
 <a href="https://cheats.rs/2018-12-01/">https://cheats.rs/2018-12-01/</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgf26a25f" class="outline-3">
-<h3 id="orgf26a25f"><span class="section-number-3">2.5</span> The Periodic Table of Rust Types</h3>
-<div class="outline-text-3" id="text-2-5">
+<div id="outline-container-orgad9dd89" class="outline-3">
+<h3 id="orgad9dd89"><span class="section-number-3">2.8</span> The Periodic Table of Rust Types</h3>
+<div class="outline-text-3" id="text-2-8">
 <p>
 <a href="http://cosmic.mearie.org/2014/01/periodic-table-of-rust-types/">http://cosmic.mearie.org/2014/01/periodic-table-of-rust-types/</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgfc9ca5d" class="outline-3">
-<h3 id="orgfc9ca5d"><span class="section-number-3">2.6</span> Ownership visualization</h3>
-<div class="outline-text-3" id="text-2-6">
+<div id="outline-container-org8d68c53" class="outline-3">
+<h3 id="org8d68c53"><span class="section-number-3">2.9</span> Ownership visualization</h3>
+<div class="outline-text-3" id="text-2-9">
 <p>
 <a href="https://rufflewind.com/2017-02-15/rust-move-copy-borrow">https://rufflewind.com/2017-02-15/rust-move-copy-borrow</a>
 </p>
@@ -2462,8 +2485,10 @@ unimplemented!() is a time saver.
 </div>
 </div>
 
-<div id="outline-container-org18031b8" class="outline-2">
-<h2 id="org18031b8"><span class="section-number-2">3</span> Rust: Fast and Safe.</h2>
+
+
+<div id="outline-container-orgfbfa17f" class="outline-2">
+<h2 id="orgfbfa17f"><span class="section-number-2">3</span> Rust: Fast and Safe.</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 highlight pitfalls.
@@ -2500,8 +2525,8 @@ with profiles
 </p>
 </div>
 
-<div id="outline-container-orgd4a442e" class="outline-3">
-<h3 id="orgd4a442e"><span class="section-number-3">3.1</span> RefCell</h3>
+<div id="outline-container-org2fc4af1" class="outline-3">
+<h3 id="org2fc4af1"><span class="section-number-3">3.1</span> RefCell</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 meander through the 
@@ -2514,14 +2539,14 @@ meander through the
 </p>
 </div>
 
-<div id="outline-container-orgf687015" class="outline-4">
-<h4 id="orgf687015"><span class="section-number-4">3.1.1</span> How do I return a reference to something inside a RefCell without breaking encapsulation?</h4>
+<div id="outline-container-org1a9fa36" class="outline-4">
+<h4 id="org1a9fa36"><span class="section-number-4">3.1.1</span> How do I return a reference to something inside a RefCell without breaking encapsulation?</h4>
 </div>
 
 
 
-<div id="outline-container-org2ad38b3" class="outline-4">
-<h4 id="org2ad38b3"><span class="section-number-4">3.1.2</span> exercise ideas</h4>
+<div id="outline-container-orgdc0c716" class="outline-4">
+<h4 id="orgdc0c716"><span class="section-number-4">3.1.2</span> exercise ideas</h4>
 <div class="outline-text-4" id="text-3-1-2">
 <p>
 interlace The rust book with exercises?
@@ -2532,16 +2557,16 @@ rust playground iframe
 </div>
 </div>
 
-<div id="outline-container-org4b0bbcb" class="outline-2">
-<h2 id="org4b0bbcb"><span class="section-number-2">4</span> Shared Borrows</h2>
+<div id="outline-container-org915015a" class="outline-2">
+<h2 id="org915015a"><span class="section-number-2">4</span> Shared Borrows</h2>
 </div>
-<div id="outline-container-org59a4182" class="outline-2">
-<h2 id="org59a4182"><span class="section-number-2">5</span> Mutable Borrows</h2>
+<div id="outline-container-orgb7aea92" class="outline-2">
+<h2 id="orgb7aea92"><span class="section-number-2">5</span> Mutable Borrows</h2>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Derek Rhodes</p>
-<p class="date">Created: 2019-12-31 Tue 15:53</p>
+<p class="date">Created: 2020-02-16 Sun 10:47</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
