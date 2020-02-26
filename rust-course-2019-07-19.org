@@ -811,6 +811,12 @@ Get the your editor working.
 
 
 * UNSORTED 
+** Interposition library
+-- need to review
+"redhook is a helper crate for writing interposition libraries
+(LD_PRELOAD, DYLD_INSERT_LIBRARIES, etc.) in Rust."
+this https://github.com/geofft/redhook
+
 ** Rust Battle!
 https://rustbattle.net/battle
 
